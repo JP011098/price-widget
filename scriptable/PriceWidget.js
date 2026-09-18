@@ -22,12 +22,90 @@
 const DATA_URL = "https://raw.githubusercontent.com/JP011098/price-widget/main/data/prices.json";
 const MAX_GAS_ROWS_IN_WIDGET = 6;
 
+// --- Trigger GitHub Action on every refresh ---
+// GitHub's own hourly cron schedule has been unreliable for this repo, so
+// the widget itself asks GitHub to run the fetch workflow via its API each
+// time it refreshes. This doesn't change what's shown THIS refresh (the
+// Action takes ~15s to run), but keeps data updating on the next refresh
+// without depending on GitHub's cron. Requires a one-time GitHub personal
+// access token, entered once when you open the script directly (not from
+// the widget) and stored securely in this device's Keychain.
+const GITHUB_OWNER = "JP011098";
+const GITHUB_REPO = "price-widget";
+const GITHUB_WORKFLOW_FILE = "update-prices.yml";
+const GITHUB_PAT_KEY = "price_widget_github_pat";
+
+async function ensureGitHubPAT() {
+  if (Keychain.contains(GITHUB_PAT_KEY)) return;
+  const alert = new Alert();
+  alert.title = "GitHub Access Token";
+  alert.message =
+    "Paste your fine-grained GitHub personal access token (Actions: Read and write, scoped to the price-widget repo). Stored securely on this device only -- never shown or sent anywhere except GitHub's API.";
+  alert.addTextField("ghp_... or github_pat_...");
+  alert.addAction("Save");
+  alert.addCancelAction("Skip");
+  try {
+    await alert.presentAlert();
+    const token = alert.textFieldValue(0).trim();
+    if (token) Keychain.set(GITHUB_PAT_KEY, token);
+  } catch (e) {
+    // Skipped -- will ask again next time the script is opened directly.
+  }
+}
+
+async function triggerGitHubWorkflow() {
+  if (!Keychain.contains(GITHUB_PAT_KEY)) return;
+  const token = Keychain.get(GITHUB_PAT_KEY);
+  const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/actions/workflows/${GITHUB_WORKFLOW_FILE}/dispatches`;
+  const req = new Request(url);
+  req.method = "POST";
+  req.headers = {
+    Accept: "application/vnd.github+json",
+    Authorization: `Bearer ${token}`,
+    "X-GitHub-Api-Version": "2022-11-28",
+  };
+  req.body = JSON.stringify({ ref: "main" });
+  try {
+    await req.load();
+  } catch (e) {
+    // Ignore failures (offline, expired token, etc.) -- next refresh retries.
+  }
+}
+
+// --- Frosted wallpaper background (optional) ---
+// If a file named exactly this exists in Scriptable's Documents folder, it's
+// used as the widget's background (a cropped screenshot of your own Home
+// Screen at the widget's exact spot), with a translucent dark overlay on top
+// for text readability -- similar to Apple's own Batteries widget look.
+// Re-crop and replace this file if you change wallpaper or move the widget.
+// If the file isn't present, the widget falls back to a plain card.
+const BACKGROUND_IMAGE_NAME = "price-widget-bg.jpg";
+const OVERLAY_COLOR = new Color("#000000", 0.45); // tweak alpha (0-1) to taste
+const OVERLAY_CORNER_RADIUS = 22;
+
 const CURRENCY_FLAGS = { CAD: "🇨🇦", INR: "🇮🇳" };
 const GREEN = new Color("#30d158");
 const GRAY_LIGHT = new Color("#8e8e93");
-const TEXT_PRIMARY = Color.dynamic(new Color("#1c1c1e"), new Color("#f2f2f7"));
-const TEXT_SECONDARY = Color.dynamic(new Color("#3c3c43"), new Color("#aeaeb2"));
-const DIVIDER_COLOR = Color.dynamic(new Color("#e5e5ea"), new Color("#3a3a3c"));
+
+// Mutable: createWidget() switches these to light variants when a frosted
+// wallpaper background is active, since a dark overlay needs light text
+// regardless of system light/dark mode.
+let TEXT_PRIMARY = Color.dynamic(new Color("#1c1c1e"), new Color("#f2f2f7"));
+let TEXT_SECONDARY = Color.dynamic(new Color("#3c3c43"), new Color("#aeaeb2"));
+let DIVIDER_COLOR = Color.dynamic(new Color("#e5e5ea"), new Color("#3a3a3c"));
+
+async function getBackgroundImage() {
+  try {
+    const fm = FileManager.local();
+    const path = fm.joinPath(fm.documentsDirectory(), BACKGROUND_IMAGE_NAME);
+    if (fm.fileExists(path)) {
+      return fm.readImage(path);
+    }
+  } catch (e) {
+    // ignore -- falls back to plain card
+  }
+  return null;
+}
 
 async function getData() {
   try {
@@ -86,22 +164,44 @@ function addRow(stack, label, value, opts = {}) {
 
 async function createWidget(data) {
   const w = new ListWidget();
-  w.backgroundColor = Color.dynamic(new Color("#ffffff"), new Color("#1c1c1e"));
-  w.setPadding(14, 14, 14, 14);
+  const bgImage = await getBackgroundImage();
 
-  const header = w.addStack();
+  let content = w;
+  if (bgImage) {
+    w.backgroundImage = bgImage;
+    w.setPadding(6, 6, 6, 6);
+    // Frosted translucent card sitting on top of the wallpaper crop, similar
+    // to Apple's own Batteries widget look.
+    content = w.addStack();
+    content.backgroundColor = OVERLAY_COLOR;
+    content.cornerRadius = OVERLAY_CORNER_RADIUS;
+    content.setPadding(12, 12, 12, 12);
+    content.layoutVertically();
+    // Light text reads well against the dark translucent overlay regardless
+    // of the underlying wallpaper or system light/dark mode.
+    TEXT_PRIMARY = Color.white();
+    TEXT_SECONDARY = new Color("#e5e5ea");
+    DIVIDER_COLOR = new Color("#ffffff", 0.25);
+  } else {
+    w.backgroundColor = Color.dynamic(new Color("#ffffff"), new Color("#1c1c1e"));
+    w.setPadding(14, 14, 14, 14);
+  }
+
+  const header = content.addStack();
   header.layoutHorizontally();
   const title = header.addText("💰 Prices");
   title.font = Font.boldSystemFont(17);
+  title.textColor = TEXT_PRIMARY;
   header.addSpacer();
   const updated = header.addText(data ? timeAgo(data.updated_at) : "no data yet");
   updated.font = Font.systemFont(11);
   updated.textColor = GRAY_LIGHT;
 
-  w.addSpacer(8);
+  content.addSpacer(8);
 
   if (!data) {
-    w.addText("Could not load prices.");
+    const errText = content.addText("Could not load prices.");
+    errText.textColor = TEXT_PRIMARY;
     return w;
   }
 
@@ -110,45 +210,45 @@ async function createWidget(data) {
 
   metalNames.forEach((metalName, idx) => {
     const emoji = metalName === "Gold" ? "🥇" : metalName === "Silver" ? "🥈" : "🔩";
-    addSectionTitle(w, emoji, metalName);
+    addSectionTitle(content, emoji, metalName);
     const byCurrency = metals[metalName];
     for (const currency of Object.keys(byCurrency)) {
       const flag = CURRENCY_FLAGS[currency] || currency;
       const units = byCurrency[currency];
       for (const unitLabel of Object.keys(units)) {
-        addRow(w, `${flag} ${unitLabel}`, `${currency} ${fmt(units[unitLabel])}`);
+        addRow(content, `${flag} ${unitLabel}`, `${currency} ${fmt(units[unitLabel])}`);
       }
     }
-    if (idx < metalNames.length - 1 || data.gas) addDivider(w);
+    if (idx < metalNames.length - 1 || data.gas) addDivider(content);
   });
 
   if (data.gas) {
-    addSectionTitle(w, "⛽", "Gas — Calgary area");
+    addSectionTitle(content, "⛽", "Gas — Calgary area");
     if (data.gas.stations && data.gas.stations.length) {
       const shown = data.gas.stations.slice(0, MAX_GAS_ROWS_IN_WIDGET);
       shown.forEach((station, i) => {
-        addRow(w, station.display_name || station.name, `CAD ${fmt(station.price, 3)}`, {
+        addRow(content, station.display_name || station.name, `CAD ${fmt(station.price, 3)}`, {
           highlight: i === 0,
         });
       });
       const remaining = data.gas.stations.length - shown.length;
       if (remaining > 0) {
-        w.addSpacer(2);
-        const hint = w.addText(`+${remaining} more — tap to view all`);
+        content.addSpacer(2);
+        const hint = content.addText(`+${remaining} more — tap to view all`);
         hint.font = Font.italicSystemFont(10);
         hint.textColor = GRAY_LIGHT;
       }
     } else if (data.gas.value !== undefined) {
-      addRow(w, "Regular (per L)", `CAD ${fmt(data.gas.value, 3)}`);
+      addRow(content, "Regular (per L)", `CAD ${fmt(data.gas.value, 3)}`);
       if (data.gas.source === "nrcan_weekly_fallback") {
-        const note = w.addText("weekly avg (fallback source)");
+        const note = content.addText("weekly avg (fallback source)");
         note.font = Font.italicSystemFont(10);
         note.textColor = GRAY_LIGHT;
       }
     }
   }
 
-    w.addSpacer();
+  content.addSpacer();
 
   // Hint to iOS that it's worth checking again in ~30 minutes. iOS decides
   // the actual refresh cadence and may not honor this exactly, but it
@@ -235,6 +335,14 @@ async function presentFullDetail(data) {
 // ---------- Entry point ----------
 
 const data = await getData();
+
+// Set up the token once, only when opened directly (widgets can't show
+// interactive prompts). Then ask GitHub to run the fetch workflow now, so
+// the *next* refresh has fresher data than this one.
+if (!config.runsInWidget) {
+  await ensureGitHubPAT();
+}
+await triggerGitHubWorkflow();
 
 if (config.runsInWidget) {
   const widget = await createWidget(data);
