@@ -92,15 +92,18 @@ async function createWidget(data) {
 
   if (data.gas) {
     addSectionTitle(w, "⛽ Gas — Calgary area");
-    addRow(w, "Regular (per L)", `CAD ${fmt(data.gas.value, 3)}`);
-    if (data.gas.source === "nrcan_weekly_fallback") {
-      const note = w.addText("weekly avg (fallback source)");
-      note.font = Font.italicSystemFont(10);
-      note.textColor = Color.gray();
-    } else if (data.gas.station_count) {
-      const note = w.addText(`avg of ${data.gas.station_count} nearby stations`);
-      note.font = Font.italicSystemFont(10);
-      note.textColor = Color.gray();
+    if (data.gas.stations && data.gas.stations.length) {
+      // Individual stations, cheapest first (already sorted by fetch script).
+      for (const station of data.gas.stations) {
+        addRow(w, station.name, `CAD ${fmt(station.price, 3)}`);
+      }
+    } else if (data.gas.value !== undefined) {
+      addRow(w, "Regular (per L)", `CAD ${fmt(data.gas.value, 3)}`);
+      if (data.gas.source === "nrcan_weekly_fallback") {
+        const note = w.addText("weekly avg (fallback source)");
+        note.font = Font.italicSystemFont(10);
+        note.textColor = Color.gray();
+      }
     }
   }
 
