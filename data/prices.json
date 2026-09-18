@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T08:13:35.478548+00:00",
+  "updated_at": "2026-09-18T08:43:07.754714+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -21,8 +21,48 @@
     }
   },
   "gas": {
-    "value": 1.791,
     "source": "google_places",
-    "station_count": 10
+    "stations": [
+      {
+        "name": "Costco Gas Station",
+        "price": 1.62
+      },
+      {
+        "name": "Tsuut'ina Gas",
+        "price": 1.66
+      },
+      {
+        "name": "Costco Gas Station",
+        "price": 1.75
+      },
+      {
+        "name": "Costco Gas Station",
+        "price": 1.75
+      },
+      {
+        "name": "Costco Gas Station",
+        "price": 1.75
+      },
+      {
+        "name": "Esso",
+        "price": 1.83
+      },
+      {
+        "name": "Shell",
+        "price": 1.85
+      },
+      {
+        "name": "Shell",
+        "price": 1.85
+      },
+      {
+        "name": "Shell",
+        "price": 1.9
+      },
+      {
+        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
+        "price": 1.95
+      }
+    ]
   }
 }
