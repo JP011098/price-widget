@@ -1,5 +1,28 @@
 {
-  "updated_at": null,
-  "metals": {},
-  "gas": null
+  "updated_at": "2026-09-18T08:13:35.478548+00:00",
+  "metals": {
+    "Gold": {
+      "CAD": {
+        "10g 24K": 1977.06,
+        "10g 22K": 1812.37
+      },
+      "INR": {
+        "10g 24K": 154420.0,
+        "10g 22K": 141550.0
+      }
+    },
+    "Silver": {
+      "CAD": {
+        "1kg": 3014.04
+      },
+      "INR": {
+        "1kg": 250000.0
+      }
+    }
+  },
+  "gas": {
+    "value": 1.791,
+    "source": "google_places",
+    "station_count": 10
+  }
 }
