@@ -37,7 +37,27 @@ jobs:
         run: |
           git config user.name "price-bot"
           git config user.email "price-bot@users.noreply.github.com"
-          git add data/prices.json
-          git diff --staged --quiet || git commit -m "Update prices"
-          git pull --rebase
-          git push
+          # This file is fully regenerated every run, so there's nothing to
+          # meaningfully "merge" between old and new content -- whichever run
+          # finishes should just place its fresh data on top of the current
+          # tip. Resetting onto the latest remote commit each attempt (rather
+          # than rebasing/merging file content) avoids conflicts entirely; the
+          # retry loop is just a safety net for the rare case two runs race
+          # on the final push despite the concurrency group above.
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --soft origin/main
+            git add data/prices.json
+            if git diff --staged --quiet; then
+              echo "No changes to commit."
+              exit 0
+            fi
+            git commit -m "Update prices"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push failed (race with another run), retrying..."
+            sleep 3
+          done
+          echo "Failed to push after retries" >&2
+          exit 1
