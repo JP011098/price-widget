@@ -184,7 +184,9 @@ def merge_metals(cad_results, inr_results):
 
 
 def fetch_gas_google_places(config):
-    """Try Google Places (New) Nearby Search for gas station fuel prices."""
+    """Try Google Places (New) Nearby Search for gas station fuel prices.
+    Returns individual station names + prices, sorted cheapest to costliest,
+    rather than a single averaged number."""
     api_key = os.environ.get("GOOGLE_MAPS_KEY")
     if not api_key:
         print("WARNING: GOOGLE_MAPS_KEY not set, skipping Google Places gas lookup", file=sys.stderr)
@@ -199,7 +201,7 @@ def fetch_gas_google_places(config):
     }
     body = {
         "includedTypes": ["gas_station"],
-        "maxResultCount": 20,
+        "maxResultCount": 20,  # Google's Nearby Search hard cap per request
         "locationRestriction": {
             "circle": {
                 "center": {"latitude": loc["lat"], "longitude": loc["lng"]},
@@ -214,8 +216,9 @@ def fetch_gas_google_places(config):
         print(f"ERROR calling Google Places: {e}", file=sys.stderr)
         return None
 
-    prices = []
+    stations = []
     for place in data.get("places", []):
+        name = place.get("displayName", {}).get("text", "Unknown station")
         fuel_options = place.get("fuelOptions", {})
         for fp in fuel_options.get("fuelPrices", []):
             fuel_type = fp.get("type", "")
@@ -224,18 +227,15 @@ def fetch_gas_google_places(config):
                 if price.get("currencyCode") == "CAD":
                     units = int(price.get("units", 0))
                     nanos = price.get("nanos", 0)
-                    prices.append(units + nanos / 1e9)
+                    stations.append({"name": name, "price": round(units + nanos / 1e9, 3)})
+                break  # one regular-fuel price per station is enough
 
-    if not prices:
+    if not stations:
         print("Google Places returned no usable regular-gas prices", file=sys.stderr)
         return None
 
-    avg_price = sum(prices) / len(prices)
-    return {
-        "value": round(avg_price, 3),
-        "source": "google_places",
-        "station_count": len(prices),
-    }
+    stations.sort(key=lambda s: s["price"])
+    return {"source": "google_places", "stations": stations}
 
 
 def fetch_gas_nrcan_fallback(config):
