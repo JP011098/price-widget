@@ -5,15 +5,29 @@
 // 2. Open Scriptable, create a new script, paste this whole file in, name it "PriceWidget".
 // 3. Edit DATA_URL below to point at your GitHub repo's raw prices.json.
 // 4. Long-press your Home Screen -> tap + -> find "Scriptable" -> choose the
-//    "Large" size (that's the biggest widget size iPhone supports — there is
-//    no true "full screen" widget on iPhone, Large is the max) -> add it.
+//    "Large" size (the biggest size iPhone currently supports until
+//    Scriptable adds the new iOS 27 extra-large widget) -> add it.
 // 5. Tap the new widget -> pick "PriceWidget" as its script.
+//
+// NOTE ON SCROLLING: Home Screen widgets can never scroll -- this is an iOS
+// platform restriction, not a Scriptable limitation. To work around it, the
+// widget shows a condensed view (top gas stations only), and TAPPING the
+// widget opens Scriptable and shows a full scrollable list of everything,
+// including every gas station, via a native table view.
 //
 // The widget re-checks this URL each time iOS refreshes it (roughly every
 // 15-60+ min, iOS decides the exact cadence). Your data only actually changes
 // every couple hours (whenever the GitHub Action runs), so that's fine.
 
-const DATA_URL = "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/data/prices.json";
+const DATA_URL = "https://raw.githubusercontent.com/JP011098/price-widget/main/data/prices.json";
+const MAX_GAS_ROWS_IN_WIDGET = 6;
+
+const CURRENCY_FLAGS = { CAD: "🇨🇦", INR: "🇮🇳" };
+const GREEN = new Color("#30d158");
+const GRAY_LIGHT = new Color("#8e8e93");
+const TEXT_PRIMARY = Color.dynamic(new Color("#1c1c1e"), new Color("#f2f2f7"));
+const TEXT_SECONDARY = Color.dynamic(new Color("#3c3c43"), new Color("#aeaeb2"));
+const DIVIDER_COLOR = Color.dynamic(new Color("#e5e5ea"), new Color("#3a3a3c"));
 
 async function getData() {
   try {
@@ -38,21 +52,36 @@ function timeAgo(isoString) {
   return `${hours}h ago`;
 }
 
-function addSectionTitle(stack, text) {
-  const t = stack.addText(text);
-  t.font = Font.boldSystemFont(15);
-  t.textColor = Color.dynamic(new Color("#222222"), new Color("#eeeeee"));
-}
+// ---------- Widget (condensed, Home Screen) ----------
 
-function addRow(stack, label, value) {
+function addSectionTitle(stack, emoji, text) {
   const row = stack.addStack();
   row.layoutHorizontally();
+  const t = row.addText(`${emoji}  ${text}`);
+  t.font = Font.boldSystemFont(15);
+  t.textColor = TEXT_PRIMARY;
+}
+
+function addDivider(stack) {
+  stack.addSpacer(4);
+  const line = stack.addStack();
+  line.size = new Size(0, 1);
+  line.backgroundColor = DIVIDER_COLOR;
+  stack.addSpacer(4);
+}
+
+function addRow(stack, label, value, opts = {}) {
+  const row = stack.addStack();
+  row.layoutHorizontally();
+  row.centerAlignContent();
   const l = row.addText(label);
-  l.font = Font.systemFont(13);
-  l.textColor = Color.dynamic(new Color("#555555"), new Color("#aaaaaa"));
+  l.font = opts.highlight ? Font.semiboldSystemFont(13) : Font.systemFont(13);
+  l.textColor = opts.highlight ? GREEN : TEXT_SECONDARY;
+  l.lineLimit = 1;
   row.addSpacer();
   const v = row.addText(value);
-  v.font = Font.boldSystemFont(13);
+  v.font = Font.semiboldSystemFont(13);
+  v.textColor = opts.highlight ? GREEN : TEXT_PRIMARY;
 }
 
 async function createWidget(data) {
@@ -67,7 +96,7 @@ async function createWidget(data) {
   header.addSpacer();
   const updated = header.addText(data ? timeAgo(data.updated_at) : "no data yet");
   updated.font = Font.systemFont(11);
-  updated.textColor = Color.gray();
+  updated.textColor = GRAY_LIGHT;
 
   w.addSpacer(8);
 
@@ -77,32 +106,44 @@ async function createWidget(data) {
   }
 
   const metals = data.metals || {};
+  const metalNames = Object.keys(metals);
 
-  for (const metalName of Object.keys(metals)) {
-    addSectionTitle(w, metalName);
+  metalNames.forEach((metalName, idx) => {
+    const emoji = metalName === "Gold" ? "🥇" : metalName === "Silver" ? "🥈" : "🔩";
+    addSectionTitle(w, emoji, metalName);
     const byCurrency = metals[metalName];
     for (const currency of Object.keys(byCurrency)) {
+      const flag = CURRENCY_FLAGS[currency] || currency;
       const units = byCurrency[currency];
       for (const unitLabel of Object.keys(units)) {
-        addRow(w, `${unitLabel} (${currency})`, `${currency} ${fmt(units[unitLabel])}`);
+        addRow(w, `${flag} ${unitLabel}`, `${currency} ${fmt(units[unitLabel])}`);
       }
     }
-    w.addSpacer(6);
-  }
+    if (idx < metalNames.length - 1 || data.gas) addDivider(w);
+  });
 
   if (data.gas) {
-    addSectionTitle(w, "⛽ Gas — Calgary area");
+    addSectionTitle(w, "⛽", "Gas — Calgary area");
     if (data.gas.stations && data.gas.stations.length) {
-      // Individual stations, cheapest first (already sorted by fetch script).
-      for (const station of data.gas.stations) {
-        addRow(w, station.display_name || station.name, `CAD ${fmt(station.price, 3)}`);
+      const shown = data.gas.stations.slice(0, MAX_GAS_ROWS_IN_WIDGET);
+      shown.forEach((station, i) => {
+        addRow(w, station.display_name || station.name, `CAD ${fmt(station.price, 3)}`, {
+          highlight: i === 0,
+        });
+      });
+      const remaining = data.gas.stations.length - shown.length;
+      if (remaining > 0) {
+        w.addSpacer(2);
+        const hint = w.addText(`+${remaining} more — tap to view all`);
+        hint.font = Font.italicSystemFont(10);
+        hint.textColor = GRAY_LIGHT;
       }
     } else if (data.gas.value !== undefined) {
       addRow(w, "Regular (per L)", `CAD ${fmt(data.gas.value, 3)}`);
       if (data.gas.source === "nrcan_weekly_fallback") {
         const note = w.addText("weekly avg (fallback source)");
         note.font = Font.italicSystemFont(10);
-        note.textColor = Color.gray();
+        note.textColor = GRAY_LIGHT;
       }
     }
   }
@@ -111,12 +152,90 @@ async function createWidget(data) {
   return w;
 }
 
+// ---------- Full detail (scrollable, opens when widget is tapped) ----------
+
+async function presentFullDetail(data) {
+  const table = new UITable();
+  table.showSeparators = true;
+
+  function addHeaderRow(text) {
+    const row = new UITableRow();
+    row.isHeader = true;
+    row.dismissOnSelect = false;
+    row.addText(text);
+    table.addRow(row);
+  }
+
+  function addTwoColumnRow(label, value, opts = {}) {
+    const row = new UITableRow();
+    row.dismissOnSelect = false;
+    if (opts.highlight) row.backgroundColor = new Color("#30d158", 0.12);
+    const left = row.addText(label);
+    left.widthWeight = 68;
+    const right = row.addText(value);
+    right.widthWeight = 32;
+    right.rightAligned();
+    if (opts.highlight) {
+      right.titleColor = GREEN;
+      left.titleColor = GREEN;
+    }
+    table.addRow(row);
+  }
+
+  if (!data) {
+    addHeaderRow("Could not load prices");
+    await table.present(true);
+    return;
+  }
+
+  addHeaderRow(`💰 Prices — updated ${timeAgo(data.updated_at)}`);
+
+  const metals = data.metals || {};
+  for (const metalName of Object.keys(metals)) {
+    const emoji = metalName === "Gold" ? "🥇" : metalName === "Silver" ? "🥈" : "🔩";
+    addHeaderRow(`${emoji} ${metalName}`);
+    const byCurrency = metals[metalName];
+    for (const currency of Object.keys(byCurrency)) {
+      const flag = CURRENCY_FLAGS[currency] || currency;
+      const units = byCurrency[currency];
+      for (const unitLabel of Object.keys(units)) {
+        addTwoColumnRow(`${flag} ${unitLabel}`, `${currency} ${fmt(units[unitLabel])}`);
+      }
+    }
+  }
+
+  if (data.gas) {
+    if (data.gas.stations && data.gas.stations.length) {
+      addHeaderRow(`⛽ Gas — Calgary area (${data.gas.stations.length} stations)`);
+      data.gas.stations.forEach((station, i) => {
+        addTwoColumnRow(
+          station.display_name || station.name,
+          `CAD ${fmt(station.price, 3)}`,
+          { highlight: i === 0 }
+        );
+      });
+    } else if (data.gas.value !== undefined) {
+      addHeaderRow("⛽ Gas — Calgary area");
+      addTwoColumnRow("Regular (per L)", `CAD ${fmt(data.gas.value, 3)}`);
+      if (data.gas.source === "nrcan_weekly_fallback") {
+        addTwoColumnRow("Source", "weekly avg (fallback)");
+      }
+    }
+  }
+
+  await table.present(true);
+}
+
+// ---------- Entry point ----------
+
 const data = await getData();
-const widget = await createWidget(data);
 
 if (config.runsInWidget) {
+  const widget = await createWidget(data);
   Script.setWidget(widget);
 } else {
-  await widget.presentLarge();
+  // Opened by tapping the widget (or run manually in the app) -- show the
+  // full scrollable detail view instead of just re-showing the widget preview.
+  await presentFullDetail(data);
 }
 Script.complete();
