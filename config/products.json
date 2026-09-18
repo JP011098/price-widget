@@ -1,0 +1,38 @@
+{
+  "metals": {
+    "enabled": true,
+    "cad_provider": "goldapi",
+    "cad_refresh_every_hours": 12,
+    "inr_provider": "goodreturns_scrape",
+    "items": [
+      {
+        "symbol": "XAU",
+        "name": "Gold",
+        "units": [
+          { "label": "10g 24K", "grams": 10, "purity": 1.0 },
+          { "label": "10g 22K", "grams": 10, "purity": 0.9167 }
+        ]
+      },
+      {
+        "symbol": "XAG",
+        "name": "Silver",
+        "units": [
+          { "label": "1kg", "grams": 1000, "purity": 1.0 }
+        ]
+      }
+    ]
+  },
+  "gas": {
+    "enabled": true,
+    "currency": "CAD",
+    "unit": "per Liter",
+    "location": {
+      "name": "Calgary, AB",
+      "lat": 51.0447,
+      "lng": -114.0719,
+      "radius_m": 40000
+    },
+    "primary_provider": "google_places",
+    "fallback_provider": "nrcan_weekly"
+  }
+}
