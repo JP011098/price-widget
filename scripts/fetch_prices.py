@@ -197,7 +197,7 @@ def fetch_gas_google_places(config):
     headers = {
         "Content-Type": "application/json",
         "X-Goog-Api-Key": api_key,
-        "X-Goog-FieldMask": "places.id,places.displayName,places.fuelOptions",
+        "X-Goog-FieldMask": "places.id,places.displayName,places.shortFormattedAddress,places.fuelOptions",
     }
     body = {
         "includedTypes": ["gas_station"],
@@ -219,6 +219,11 @@ def fetch_gas_google_places(config):
     stations = []
     for place in data.get("places", []):
         name = place.get("displayName", {}).get("text", "Unknown station")
+        # shortFormattedAddress looks like "1717 32 Ave NE, Calgary" -- take
+        # just the street part as a compact location tag.
+        short_address = place.get("shortFormattedAddress", "")
+        street = short_address.split(",")[0].strip() if short_address else ""
+
         fuel_options = place.get("fuelOptions", {})
         for fp in fuel_options.get("fuelPrices", []):
             fuel_type = fp.get("type", "")
@@ -227,12 +232,27 @@ def fetch_gas_google_places(config):
                 if price.get("currencyCode") == "CAD":
                     units = int(price.get("units", 0))
                     nanos = price.get("nanos", 0)
-                    stations.append({"name": name, "price": round(units + nanos / 1e9, 3)})
+                    stations.append({
+                        "name": name,
+                        "street": street,
+                        "price": round(units + nanos / 1e9, 3),
+                    })
                 break  # one regular-fuel price per station is enough
 
     if not stations:
         print("Google Places returned no usable regular-gas prices", file=sys.stderr)
         return None
+
+    # Disambiguate stations that share a brand name (e.g. multiple Costcos)
+    # by appending the street address only where it's actually needed.
+    name_counts = {}
+    for s in stations:
+        name_counts[s["name"]] = name_counts.get(s["name"], 0) + 1
+    for s in stations:
+        if name_counts[s["name"]] > 1 and s["street"]:
+            s["display_name"] = f"{s['name']} ({s['street']})"
+        else:
+            s["display_name"] = s["name"]
 
     stations.sort(key=lambda s: s["price"])
     return {"source": "google_places", "stations": stations}
