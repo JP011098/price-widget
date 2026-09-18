@@ -95,7 +95,7 @@ async function createWidget(data) {
     if (data.gas.stations && data.gas.stations.length) {
       // Individual stations, cheapest first (already sorted by fetch script).
       for (const station of data.gas.stations) {
-        addRow(w, station.name, `CAD ${fmt(station.price, 3)}`);
+        addRow(w, station.display_name || station.name, `CAD ${fmt(station.price, 3)}`);
       }
     } else if (data.gas.value !== undefined) {
       addRow(w, "Regular (per L)", `CAD ${fmt(data.gas.value, 3)}`);
