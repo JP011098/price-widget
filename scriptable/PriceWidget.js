@@ -148,7 +148,13 @@ async function createWidget(data) {
     }
   }
 
-  w.addSpacer();
+    w.addSpacer();
+
+  // Hint to iOS that it's worth checking again in ~30 minutes. iOS decides
+  // the actual refresh cadence and may not honor this exactly, but it
+  // generally helps nudge more frequent updates than the default.
+  w.refreshAfterDate = new Date(Date.now() + 30 * 60 * 1000);
+
   return w;
 }
 
