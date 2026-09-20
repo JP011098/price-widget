@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T03:34:10.060176+00:00",
+  "updated_at": "2026-09-20T05:56:13.557876+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -26,25 +26,25 @@
       {
         "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
-        "price": 1.67,
+        "price": 1.73,
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
         "name": "Tsuut'ina Gas",
         "street": "9915 Chula Blvd Tsuut\u2019ina Nation",
-        "price": 1.69,
+        "price": 1.75,
         "display_name": "Tsuut'ina Gas"
       },
       {
         "name": "Costco Gas Station",
         "street": "Parking lot",
-        "price": 1.77,
+        "price": 1.8,
         "display_name": "Costco Gas Station (Parking lot)"
       },
       {
         "name": "Costco Gas Station",
         "street": "75 E Hills Blvd SE",
-        "price": 1.77,
+        "price": 1.8,
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
@@ -80,7 +80,7 @@
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
         "street": "42148 AB-1",
-        "price": 1.95,
+        "price": 1.93,
         "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
       }
     ]
