@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T12:25:48.246721+00:00",
+  "updated_at": "2026-09-21T16:54:47.274525+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -31,15 +31,15 @@
       },
       {
         "name": "Costco Gas Station",
-        "street": "75 E Hills Blvd SE",
+        "street": "12905 Buffalo Run Blvd",
         "price": 1.73,
-        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
+        "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
         "name": "Costco Gas Station",
-        "street": "12905 Buffalo Run Blvd",
-        "price": 1.74,
-        "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
+        "street": "75 E Hills Blvd SE",
+        "price": 1.73,
+        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
         "name": "Tsuut'ina Gas",
