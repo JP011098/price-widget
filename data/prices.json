@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T11:10:51.131098+00:00",
+  "updated_at": "2026-09-23T16:32:34.774223+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -42,6 +42,12 @@
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
+        "name": "Esso",
+        "street": "1201 1st St SE",
+        "price": 1.73,
+        "display_name": "Esso"
+      },
+      {
         "name": "Shell",
         "street": "539 17 Ave SW",
         "price": 1.73,
@@ -60,12 +66,6 @@
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
-        "name": "Esso",
-        "street": "1201 1st St SE",
-        "price": 1.8,
-        "display_name": "Esso"
-      },
-      {
         "name": "Shell",
         "street": "11175 14 St NE",
         "price": 1.85,
@@ -74,7 +74,7 @@
       {
         "name": "Shell",
         "street": "200 Airport Rd NE",
-        "price": 1.9,
+        "price": 1.86,
         "display_name": "Shell (200 Airport Rd NE)"
       }
     ]
