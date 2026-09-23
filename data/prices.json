@@ -1,22 +1,22 @@
 {
-  "updated_at": "2026-09-22T21:54:19.773747+00:00",
+  "updated_at": "2026-09-23T00:11:10.466392+00:00",
   "metals": {
     "Gold": {
       "CAD": {
-        "10g 24K": 1960.07,
-        "10g 22K": 1796.79
+        "10g 24K": 1974.34,
+        "10g 22K": 1809.88
       },
       "INR": {
-        "10g 24K": 153330.0,
-        "10g 22K": 140550.0
+        "10g 24K": 153320.0,
+        "10g 22K": 140540.0
       }
     },
     "Silver": {
       "CAD": {
-        "1kg": 2972.69
+        "1kg": 3049.43
       },
       "INR": {
-        "1kg": 250000.0
+        "1kg": 249900.0
       }
     }
   },
@@ -42,6 +42,12 @@
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
+        "name": "Shell",
+        "street": "539 17 Ave SW",
+        "price": 1.74,
+        "display_name": "Shell (539 17 Ave SW)"
+      },
+      {
         "name": "Tsuut'ina Gas",
         "street": "9915 Chula Blvd Tsuut\u2019ina Nation",
         "price": 1.75,
@@ -56,14 +62,8 @@
       {
         "name": "Esso",
         "street": "1201 1st St SE",
-        "price": 1.83,
+        "price": 1.8,
         "display_name": "Esso"
-      },
-      {
-        "name": "Shell",
-        "street": "539 17 Ave SW",
-        "price": 1.83,
-        "display_name": "Shell (539 17 Ave SW)"
       },
       {
         "name": "Shell",
