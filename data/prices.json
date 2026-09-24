@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T23:30:18.389781+00:00",
+  "updated_at": "2026-09-24T04:07:02.943610+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -7,8 +7,8 @@
         "10g 22K": 1809.88
       },
       "INR": {
-        "10g 24K": 154200.0,
-        "10g 22K": 141350.0
+        "10g 24K": 152680.0,
+        "10g 22K": 139950.0
       }
     },
     "Silver": {
@@ -16,13 +16,19 @@
         "1kg": 3049.43
       },
       "INR": {
-        "1kg": 250000.0
+        "1kg": 245000.0
       }
     }
   },
   "gas": {
     "source": "google_places",
     "stations": [
+      {
+        "name": "Costco Gas Station",
+        "street": "75 E Hills Blvd SE",
+        "price": 1.69,
+        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
+      },
       {
         "name": "Costco Gas Station",
         "street": "Parking lot",
@@ -36,12 +42,6 @@
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
-        "name": "Costco Gas Station",
-        "street": "75 E Hills Blvd SE",
-        "price": 1.73,
-        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
-      },
-      {
         "name": "Esso",
         "street": "1201 1st St SE",
         "price": 1.73,
@@ -50,7 +50,7 @@
       {
         "name": "Shell",
         "street": "539 17 Ave SW",
-        "price": 1.73,
+        "price": 1.74,
         "display_name": "Shell (539 17 Ave SW)"
       },
       {
