@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T02:44:44.256923+00:00",
+  "updated_at": "2026-09-26T04:32:20.657549+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -7,8 +7,8 @@
         "10g 22K": 1779.43
       },
       "INR": {
-        "10g 24K": 152850.0,
-        "10g 22K": 140110.0
+        "10g 24K": 152680.0,
+        "10g 22K": 139950.0
       }
     },
     "Silver": {
@@ -16,7 +16,7 @@
         "1kg": 2884.89
       },
       "INR": {
-        "1kg": 244900.0
+        "1kg": 245000.0
       }
     }
   },
@@ -44,8 +44,14 @@
       {
         "name": "Costco Gas Station",
         "street": "75 E Hills Blvd SE",
-        "price": 1.67,
+        "price": 1.65,
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
+      },
+      {
+        "name": "Esso",
+        "street": "1201 1st St SE",
+        "price": 1.69,
+        "display_name": "Esso"
       },
       {
         "name": "Costco Gas Station",
@@ -54,15 +60,9 @@
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
-        "name": "Esso",
-        "street": "1201 1st St SE",
-        "price": 1.71,
-        "display_name": "Esso"
-      },
-      {
         "name": "Shell",
         "street": "539 17 Ave SW",
-        "price": 1.72,
+        "price": 1.7,
         "display_name": "Shell (539 17 Ave SW)"
       },
       {
@@ -74,7 +74,7 @@
       {
         "name": "Shell",
         "street": "11175 14 St NE",
-        "price": 1.81,
+        "price": 1.79,
         "display_name": "Shell (11175 14 St NE)"
       },
       {
