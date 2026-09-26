@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-26T09:47:23.365654+00:00",
+  "updated_at": "2026-09-26T12:51:44.021776+00:00",
   "metals": {
     "Gold": {
       "CAD": {
-        "10g 24K": 1941.13,
-        "10g 22K": 1779.43
+        "10g 24K": 1948.33,
+        "10g 22K": 1786.03
       },
       "INR": {
         "10g 24K": 152680.0,
@@ -13,7 +13,7 @@
     },
     "Silver": {
       "CAD": {
-        "1kg": 2884.89
+        "1kg": 2922.89
       },
       "INR": {
         "1kg": 245000.0
@@ -66,16 +66,16 @@
         "display_name": "Shell (539 17 Ave SW)"
       },
       {
+        "name": "Shell",
+        "street": "11175 14 St NE",
+        "price": 1.73,
+        "display_name": "Shell (11175 14 St NE)"
+      },
+      {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
         "street": "42148 AB-1",
         "price": 1.79,
         "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
-      },
-      {
-        "name": "Shell",
-        "street": "11175 14 St NE",
-        "price": 1.79,
-        "display_name": "Shell (11175 14 St NE)"
       },
       {
         "name": "Shell",
