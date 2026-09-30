@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T02:36:17.244689+00:00",
+  "updated_at": "2026-09-30T04:02:28.395192+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -7,8 +7,8 @@
         "10g 22K": 1750.73
       },
       "INR": {
-        "10g 24K": 148790.0,
-        "10g 22K": 136390.0
+        "10g 24K": 149570.0,
+        "10g 22K": 137100.0
       }
     },
     "Silver": {
@@ -16,7 +16,7 @@
         "1kg": 2803.42
       },
       "INR": {
-        "1kg": 239900.0
+        "1kg": 240000.0
       }
     }
   },
@@ -48,39 +48,39 @@
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
+        "name": "Shell",
+        "street": "539 17 Ave SW",
+        "price": 1.62,
+        "display_name": "Shell (539 17 Ave SW)"
+      },
+      {
         "name": "Costco Gas Station",
         "street": "293020 CrossIron Common #300",
         "price": 1.65,
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
-        "name": "Shell",
-        "street": "539 17 Ave SW",
-        "price": 1.66,
-        "display_name": "Shell (539 17 Ave SW)"
+        "name": "Esso",
+        "street": "1201 1st St SE",
+        "price": 1.65,
+        "display_name": "Esso"
       },
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
         "street": "42148 AB-1",
-        "price": 1.69,
+        "price": 1.67,
         "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
-      },
-      {
-        "name": "Esso",
-        "street": "1201 1st St SE",
-        "price": 1.69,
-        "display_name": "Esso"
       },
       {
         "name": "Shell",
         "street": "11175 14 St NE",
-        "price": 1.71,
+        "price": 1.7,
         "display_name": "Shell (11175 14 St NE)"
       },
       {
         "name": "Shell",
         "street": "200 Airport Rd NE",
-        "price": 1.76,
+        "price": 1.75,
         "display_name": "Shell (200 Airport Rd NE)"
       }
     ]
