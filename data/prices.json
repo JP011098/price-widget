@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T19:06:36.344486+00:00",
+  "updated_at": "2026-10-02T20:26:45.809275+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -67,15 +67,15 @@
       },
       {
         "name": "Shell",
-        "street": "200 Airport Rd NE",
-        "price": 1.59,
-        "display_name": "Shell (200 Airport Rd NE)"
+        "street": "11175 14 St NE",
+        "price": 1.54,
+        "display_name": "Shell (11175 14 St NE)"
       },
       {
         "name": "Shell",
-        "street": "11175 14 St NE",
-        "price": 1.6,
-        "display_name": "Shell (11175 14 St NE)"
+        "street": "200 Airport Rd NE",
+        "price": 1.59,
+        "display_name": "Shell (200 Airport Rd NE)"
       },
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
