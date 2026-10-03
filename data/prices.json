@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T02:26:16.945727+00:00",
+  "updated_at": "2026-10-03T04:53:28.434155+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -7,8 +7,8 @@
         "10g 22K": 1739.84
       },
       "INR": {
-        "10g 24K": 150290.0,
-        "10g 22K": 137760.0
+        "10g 24K": 149180.0,
+        "10g 22K": 136750.0
       }
     },
     "Silver": {
@@ -16,7 +16,7 @@
         "1kg": 2769.4
       },
       "INR": {
-        "1kg": 234900.0
+        "1kg": 235000.0
       }
     }
   },
@@ -44,14 +44,8 @@
       {
         "name": "Costco Gas Station",
         "street": "75 E Hills Blvd SE",
-        "price": 1.4,
+        "price": 1.38,
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
-      },
-      {
-        "name": "Shell",
-        "street": "539 17 Ave SW",
-        "price": 1.42,
-        "display_name": "Shell (539 17 Ave SW)"
       },
       {
         "name": "Costco Gas Station",
@@ -72,16 +66,22 @@
         "display_name": "Shell (11175 14 St NE)"
       },
       {
-        "name": "Shell",
-        "street": "200 Airport Rd NE",
-        "price": 1.59,
-        "display_name": "Shell (200 Airport Rd NE)"
-      },
-      {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
         "street": "42148 AB-1",
         "price": 1.65,
         "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
+      },
+      {
+        "name": "Shell",
+        "street": "200 Airport Rd NE",
+        "price": 1.76,
+        "display_name": "Shell (200 Airport Rd NE)"
+      },
+      {
+        "name": "Shell",
+        "street": "539 17 Ave SW",
+        "price": 1.76,
+        "display_name": "Shell (539 17 Ave SW)"
       }
     ]
   }
