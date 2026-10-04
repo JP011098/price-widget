@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T01:10:11.106027+00:00",
+  "updated_at": "2026-10-04T01:45:05.926172+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -25,12 +25,6 @@
     "stations": [
       {
         "name": "Costco Gas Station",
-        "street": "Parking lot",
-        "price": 1.36,
-        "display_name": "Costco Gas Station (Parking lot)"
-      },
-      {
-        "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
         "price": 1.36,
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
@@ -46,6 +40,12 @@
         "street": "1201 1st St SE",
         "price": 1.48,
         "display_name": "Esso"
+      },
+      {
+        "name": "Costco Gas Station",
+        "street": "Parking lot",
+        "price": 1.5,
+        "display_name": "Costco Gas Station (Parking lot)"
       },
       {
         "name": "Costco Gas Station",
