@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T23:39:01.569237+00:00",
+  "updated_at": "2026-10-04T01:10:01.327899+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -25,12 +25,6 @@
     "stations": [
       {
         "name": "Costco Gas Station",
-        "street": "Parking lot",
-        "price": 1.36,
-        "display_name": "Costco Gas Station (Parking lot)"
-      },
-      {
-        "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
         "price": 1.36,
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
@@ -42,28 +36,40 @@
         "display_name": "Tsuut'ina Gas"
       },
       {
-        "name": "Costco Gas Station",
-        "street": "75 E Hills Blvd SE",
-        "price": 1.38,
-        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
-      },
-      {
-        "name": "Costco Gas Station",
-        "street": "293020 CrossIron Common #300",
-        "price": 1.47,
-        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
-      },
-      {
         "name": "Esso",
         "street": "1201 1st St SE",
         "price": 1.48,
         "display_name": "Esso"
       },
       {
+        "name": "Costco Gas Station",
+        "street": "Parking lot",
+        "price": 1.5,
+        "display_name": "Costco Gas Station (Parking lot)"
+      },
+      {
+        "name": "Costco Gas Station",
+        "street": "75 E Hills Blvd SE",
+        "price": 1.5,
+        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
+      },
+      {
+        "name": "Costco Gas Station",
+        "street": "293020 CrossIron Common #300",
+        "price": 1.52,
+        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
+      },
+      {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
         "street": "42148 AB-1",
         "price": 1.65,
         "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
+      },
+      {
+        "name": "Shell",
+        "street": "539 17 Ave SW",
+        "price": 1.73,
+        "display_name": "Shell (539 17 Ave SW)"
       },
       {
         "name": "Shell",
@@ -76,12 +82,6 @@
         "street": "11175 14 St NE",
         "price": 1.76,
         "display_name": "Shell (11175 14 St NE)"
-      },
-      {
-        "name": "Shell",
-        "street": "539 17 Ave SW",
-        "price": 1.76,
-        "display_name": "Shell (539 17 Ave SW)"
       }
     ]
   }
