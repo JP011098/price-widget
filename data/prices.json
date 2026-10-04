@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T12:04:54.977933+00:00",
+  "updated_at": "2026-10-04T15:57:26.139787+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -36,6 +36,12 @@
         "display_name": "Tsuut'ina Gas"
       },
       {
+        "name": "Esso",
+        "street": "1201 1st St SE",
+        "price": 1.48,
+        "display_name": "Esso"
+      },
+      {
         "name": "Costco Gas Station",
         "street": "Parking lot",
         "price": 1.5,
@@ -70,12 +76,6 @@
         "street": "11175 14 St NE",
         "price": 1.76,
         "display_name": "Shell (11175 14 St NE)"
-      },
-      {
-        "name": "Esso",
-        "street": "1201 1st St SE",
-        "price": 1.76,
-        "display_name": "Esso"
       },
       {
         "name": "Shell",
