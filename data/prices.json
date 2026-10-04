@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T15:57:26.139787+00:00",
+  "updated_at": "2026-10-04T17:23:46.641862+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -36,6 +36,12 @@
         "display_name": "Tsuut'ina Gas"
       },
       {
+        "name": "Costco Gas Station",
+        "street": "75 E Hills Blvd SE",
+        "price": 1.42,
+        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
+      },
+      {
         "name": "Esso",
         "street": "1201 1st St SE",
         "price": 1.48,
@@ -46,12 +52,6 @@
         "street": "Parking lot",
         "price": 1.5,
         "display_name": "Costco Gas Station (Parking lot)"
-      },
-      {
-        "name": "Costco Gas Station",
-        "street": "75 E Hills Blvd SE",
-        "price": 1.5,
-        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
         "name": "Costco Gas Station",
