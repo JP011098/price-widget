@@ -1,22 +1,22 @@
 {
-  "updated_at": "2026-10-04T22:42:46.604330+00:00",
+  "updated_at": "2026-10-05T00:36:30.769335+00:00",
   "metals": {
     "Gold": {
       "CAD": {
-        "10g 24K": 1897.94,
-        "10g 22K": 1739.84
+        "10g 24K": 1903.52,
+        "10g 22K": 1744.96
       },
       "INR": {
-        "10g 24K": 149180.0,
-        "10g 22K": 136750.0
+        "10g 24K": 149170.0,
+        "10g 22K": 136740.0
       }
     },
     "Silver": {
       "CAD": {
-        "1kg": 2769.4
+        "1kg": 2801.26
       },
       "INR": {
-        "1kg": 235000.0
+        "1kg": 234900.0
       }
     }
   },
@@ -37,6 +37,12 @@
       },
       {
         "name": "Costco Gas Station",
+        "street": "Parking lot",
+        "price": 1.4,
+        "display_name": "Costco Gas Station (Parking lot)"
+      },
+      {
+        "name": "Costco Gas Station",
         "street": "75 E Hills Blvd SE",
         "price": 1.42,
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
@@ -48,16 +54,22 @@
         "display_name": "Shell (539 17 Ave SW)"
       },
       {
-        "name": "Costco Gas Station",
-        "street": "Parking lot",
-        "price": 1.5,
-        "display_name": "Costco Gas Station (Parking lot)"
+        "name": "Esso",
+        "street": "1201 1st St SE",
+        "price": 1.46,
+        "display_name": "Esso"
       },
       {
         "name": "Costco Gas Station",
         "street": "293020 CrossIron Common #300",
-        "price": 1.52,
+        "price": 1.48,
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
+      },
+      {
+        "name": "Shell",
+        "street": "200 Airport Rd NE",
+        "price": 1.58,
+        "display_name": "Shell (200 Airport Rd NE)"
       },
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
@@ -67,21 +79,9 @@
       },
       {
         "name": "Shell",
-        "street": "200 Airport Rd NE",
-        "price": 1.76,
-        "display_name": "Shell (200 Airport Rd NE)"
-      },
-      {
-        "name": "Shell",
         "street": "11175 14 St NE",
         "price": 1.76,
         "display_name": "Shell (11175 14 St NE)"
-      },
-      {
-        "name": "Esso",
-        "street": "1201 1st St SE",
-        "price": 1.76,
-        "display_name": "Esso"
       }
     ]
   }
