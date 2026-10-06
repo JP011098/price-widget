@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T06:47:35.523003+00:00",
+  "updated_at": "2026-10-06T09:57:25.517804+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -42,12 +42,6 @@
         "display_name": "Tsuut'ina Gas"
       },
       {
-        "name": "Shell",
-        "street": "539 17 Ave SW",
-        "price": 1.41,
-        "display_name": "Shell (539 17 Ave SW)"
-      },
-      {
         "name": "Costco Gas Station",
         "street": "75 E Hills Blvd SE",
         "price": 1.42,
@@ -76,6 +70,12 @@
         "street": "200 Airport Rd NE",
         "price": 1.58,
         "display_name": "Shell (200 Airport Rd NE)"
+      },
+      {
+        "name": "Shell",
+        "street": "539 17 Ave SW",
+        "price": 1.76,
+        "display_name": "Shell (539 17 Ave SW)"
       },
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
