@@ -1,34 +1,28 @@
 {
-  "updated_at": "2026-10-05T22:41:34.140242+00:00",
+  "updated_at": "2026-10-06T00:41:37.087241+00:00",
   "metals": {
     "Gold": {
       "CAD": {
-        "10g 24K": 1903.52,
-        "10g 22K": 1744.96
+        "10g 24K": 1897.54,
+        "10g 22K": 1739.47
       },
       "INR": {
-        "10g 24K": 149180.0,
-        "10g 22K": 136750.0
+        "10g 24K": 149170.0,
+        "10g 22K": 136740.0
       }
     },
     "Silver": {
       "CAD": {
-        "1kg": 2801.26
+        "1kg": 2795.76
       },
       "INR": {
-        "1kg": 235000.0
+        "1kg": 234900.0
       }
     }
   },
   "gas": {
     "source": "google_places",
     "stations": [
-      {
-        "name": "Costco Gas Station",
-        "street": "Parking lot",
-        "price": 1.36,
-        "display_name": "Costco Gas Station (Parking lot)"
-      },
       {
         "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
@@ -40,6 +34,12 @@
         "street": "9915 Chula Blvd Tsuut\u2019ina Nation",
         "price": 1.38,
         "display_name": "Tsuut'ina Gas"
+      },
+      {
+        "name": "Costco Gas Station",
+        "street": "Parking lot",
+        "price": 1.4,
+        "display_name": "Costco Gas Station (Parking lot)"
       },
       {
         "name": "Shell",
@@ -72,16 +72,16 @@
         "display_name": "Shell (200 Airport Rd NE)"
       },
       {
-        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
-        "street": "42148 AB-1",
-        "price": 1.65,
-        "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
-      },
-      {
         "name": "Shell",
         "street": "11175 14 St NE",
         "price": 1.76,
         "display_name": "Shell (11175 14 St NE)"
+      },
+      {
+        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
+        "street": "42148 AB-1",
+        "price": 1.83,
+        "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
       }
     ]
   }
