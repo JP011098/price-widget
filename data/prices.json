@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T06:17:27.566741+00:00",
+  "updated_at": "2026-10-06T06:47:35.523003+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -30,16 +30,16 @@
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
+        "name": "Costco Gas Station",
+        "street": "Parking lot",
+        "price": 1.38,
+        "display_name": "Costco Gas Station (Parking lot)"
+      },
+      {
         "name": "Tsuut'ina Gas",
         "street": "9915 Chula Blvd Tsuut\u2019ina Nation",
         "price": 1.38,
         "display_name": "Tsuut'ina Gas"
-      },
-      {
-        "name": "Costco Gas Station",
-        "street": "Parking lot",
-        "price": 1.4,
-        "display_name": "Costco Gas Station (Parking lot)"
       },
       {
         "name": "Shell",
@@ -54,28 +54,28 @@
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
+        "name": "Costco Gas Station",
+        "street": "293020 CrossIron Common #300",
+        "price": 1.45,
+        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
+      },
+      {
         "name": "Esso",
         "street": "1201 1st St SE",
         "price": 1.46,
         "display_name": "Esso"
       },
       {
-        "name": "Costco Gas Station",
-        "street": "293020 CrossIron Common #300",
-        "price": 1.48,
-        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
+        "name": "Shell",
+        "street": "11175 14 St NE",
+        "price": 1.53,
+        "display_name": "Shell (11175 14 St NE)"
       },
       {
         "name": "Shell",
         "street": "200 Airport Rd NE",
         "price": 1.58,
         "display_name": "Shell (200 Airport Rd NE)"
-      },
-      {
-        "name": "Shell",
-        "street": "11175 14 St NE",
-        "price": 1.76,
-        "display_name": "Shell (11175 14 St NE)"
       },
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
