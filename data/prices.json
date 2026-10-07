@@ -1,22 +1,22 @@
 {
-  "updated_at": "2026-10-06T22:42:48.795691+00:00",
+  "updated_at": "2026-10-07T00:26:18.854892+00:00",
   "metals": {
     "Gold": {
       "CAD": {
-        "10g 24K": 1897.54,
-        "10g 22K": 1739.47
+        "10g 24K": 1901.96,
+        "10g 22K": 1743.53
       },
       "INR": {
-        "10g 24K": 150220.0,
-        "10g 22K": 137700.0
+        "10g 24K": 150230.0,
+        "10g 22K": 137710.0
       }
     },
     "Silver": {
       "CAD": {
-        "1kg": 2795.76
+        "1kg": 2803.03
       },
       "INR": {
-        "1kg": 235000.0
+        "1kg": 234900.0
       }
     }
   },
@@ -25,39 +25,39 @@
     "stations": [
       {
         "name": "Costco Gas Station",
-        "street": "12905 Buffalo Run Blvd",
-        "price": 1.36,
-        "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
+        "street": "Parking lot",
+        "price": 1.4,
+        "display_name": "Costco Gas Station (Parking lot)"
       },
       {
         "name": "Costco Gas Station",
-        "street": "Parking lot",
-        "price": 1.38,
-        "display_name": "Costco Gas Station (Parking lot)"
+        "street": "12905 Buffalo Run Blvd",
+        "price": 1.4,
+        "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
+      },
+      {
+        "name": "Shell",
+        "street": "539 17 Ave SW",
+        "price": 1.41,
+        "display_name": "Shell (539 17 Ave SW)"
       },
       {
         "name": "Tsuut'ina Gas",
         "street": "9915 Chula Blvd Tsuut\u2019ina Nation",
-        "price": 1.38,
+        "price": 1.42,
         "display_name": "Tsuut'ina Gas"
       },
       {
         "name": "Costco Gas Station",
         "street": "75 E Hills Blvd SE",
-        "price": 1.42,
+        "price": 1.5,
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
         "name": "Costco Gas Station",
         "street": "293020 CrossIron Common #300",
-        "price": 1.45,
+        "price": 1.5,
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
-      },
-      {
-        "name": "Esso",
-        "street": "1201 1st St SE",
-        "price": 1.46,
-        "display_name": "Esso"
       },
       {
         "name": "Shell",
@@ -72,10 +72,10 @@
         "display_name": "Shell (200 Airport Rd NE)"
       },
       {
-        "name": "Shell",
-        "street": "539 17 Ave SW",
+        "name": "Esso",
+        "street": "1201 1st St SE",
         "price": 1.73,
-        "display_name": "Shell (539 17 Ave SW)"
+        "display_name": "Esso"
       },
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
