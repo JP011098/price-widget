@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T21:56:50.727113+00:00",
+  "updated_at": "2026-10-07T23:41:23.064565+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -7,8 +7,8 @@
         "10g 22K": 1743.53
       },
       "INR": {
-        "10g 24K": 149570.0,
-        "10g 22K": 137100.0
+        "10g 24K": 149560.0,
+        "10g 22K": 137090.0
       }
     },
     "Silver": {
@@ -16,19 +16,13 @@
         "1kg": 2803.03
       },
       "INR": {
-        "1kg": 235000.0
+        "1kg": 234900.0
       }
     }
   },
   "gas": {
     "source": "google_places",
     "stations": [
-      {
-        "name": "Costco Gas Station",
-        "street": "Parking lot",
-        "price": 1.4,
-        "display_name": "Costco Gas Station (Parking lot)"
-      },
       {
         "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
@@ -40,6 +34,12 @@
         "street": "9915 Chula Blvd Tsuut\u2019ina Nation",
         "price": 1.42,
         "display_name": "Tsuut'ina Gas"
+      },
+      {
+        "name": "Costco Gas Station",
+        "street": "Parking lot",
+        "price": 1.55,
+        "display_name": "Costco Gas Station (Parking lot)"
       },
       {
         "name": "Costco Gas Station",
