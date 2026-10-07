@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T01:19:09.452521+00:00",
+  "updated_at": "2026-10-07T03:25:03.966111+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -36,12 +36,6 @@
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
-        "name": "Shell",
-        "street": "539 17 Ave SW",
-        "price": 1.41,
-        "display_name": "Shell (539 17 Ave SW)"
-      },
-      {
         "name": "Tsuut'ina Gas",
         "street": "9915 Chula Blvd Tsuut\u2019ina Nation",
         "price": 1.42,
@@ -61,21 +55,27 @@
       },
       {
         "name": "Shell",
-        "street": "11175 14 St NE",
-        "price": 1.53,
-        "display_name": "Shell (11175 14 St NE)"
+        "street": "200 Airport Rd NE",
+        "price": 1.73,
+        "display_name": "Shell (200 Airport Rd NE)"
       },
       {
         "name": "Shell",
-        "street": "200 Airport Rd NE",
-        "price": 1.58,
-        "display_name": "Shell (200 Airport Rd NE)"
+        "street": "11175 14 St NE",
+        "price": 1.73,
+        "display_name": "Shell (11175 14 St NE)"
       },
       {
         "name": "Esso",
         "street": "1201 1st St SE",
         "price": 1.73,
         "display_name": "Esso"
+      },
+      {
+        "name": "Shell",
+        "street": "539 17 Ave SW",
+        "price": 1.73,
+        "display_name": "Shell (539 17 Ave SW)"
       },
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
