@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T04:15:11.928355+00:00",
+  "updated_at": "2026-10-08T06:59:19.803341+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -26,7 +26,7 @@
       {
         "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
-        "price": 1.4,
+        "price": 1.42,
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
@@ -66,16 +66,16 @@
         "display_name": "Shell (11175 14 St NE)"
       },
       {
-        "name": "Esso",
-        "street": "1201 1st St SE",
-        "price": 1.73,
-        "display_name": "Esso"
-      },
-      {
         "name": "Shell",
         "street": "539 17 Ave SW",
         "price": 1.73,
         "display_name": "Shell (539 17 Ave SW)"
+      },
+      {
+        "name": "Esso",
+        "street": "1201 1st St SE",
+        "price": 1.76,
+        "display_name": "Esso"
       },
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
