@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T16:15:30.734871+00:00",
+  "updated_at": "2026-10-08T21:44:33.468599+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -50,20 +50,20 @@
       {
         "name": "Costco Gas Station",
         "street": "293020 CrossIron Common #300",
-        "price": 1.55,
+        "price": 1.58,
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
+      },
+      {
+        "name": "Shell",
+        "street": "11175 14 St NE",
+        "price": 1.72,
+        "display_name": "Shell (11175 14 St NE)"
       },
       {
         "name": "Shell",
         "street": "200 Airport Rd NE",
         "price": 1.73,
         "display_name": "Shell (200 Airport Rd NE)"
-      },
-      {
-        "name": "Shell",
-        "street": "11175 14 St NE",
-        "price": 1.73,
-        "display_name": "Shell (11175 14 St NE)"
       },
       {
         "name": "Esso",
