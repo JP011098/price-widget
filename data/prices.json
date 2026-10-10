@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T12:14:09.824750+00:00",
+  "updated_at": "2026-10-10T13:27:46.950753+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -61,15 +61,15 @@
       },
       {
         "name": "Shell",
-        "street": "11175 14 St NE",
-        "price": 1.72,
-        "display_name": "Shell (11175 14 St NE)"
+        "street": "539 17 Ave SW",
+        "price": 1.71,
+        "display_name": "Shell (539 17 Ave SW)"
       },
       {
         "name": "Shell",
-        "street": "539 17 Ave SW",
+        "street": "11175 14 St NE",
         "price": 1.72,
-        "display_name": "Shell (539 17 Ave SW)"
+        "display_name": "Shell (11175 14 St NE)"
       },
       {
         "name": "Shell",
