@@ -1,22 +1,22 @@
 {
-  "updated_at": "2026-10-11T20:04:59.495497+00:00",
+  "updated_at": "2026-10-12T00:21:36.713672+00:00",
   "metals": {
     "Gold": {
       "CAD": {
-        "10g 24K": 1922.51,
-        "10g 22K": 1762.36
+        "10g 24K": 1927.53,
+        "10g 22K": 1766.96
       },
       "INR": {
-        "10g 24K": 151420.0,
-        "10g 22K": 138800.0
+        "10g 24K": 151410.0,
+        "10g 22K": 138790.0
       }
     },
     "Silver": {
       "CAD": {
-        "1kg": 2786.83
+        "1kg": 2806.99
       },
       "INR": {
-        "1kg": 240000.0
+        "1kg": 239900.0
       }
     }
   },
@@ -37,15 +37,15 @@
       },
       {
         "name": "Costco Gas Station",
-        "street": "Parking lot",
-        "price": 1.56,
-        "display_name": "Costco Gas Station (Parking lot)"
+        "street": "75 E Hills Blvd SE",
+        "price": 1.52,
+        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
         "name": "Costco Gas Station",
-        "street": "75 E Hills Blvd SE",
+        "street": "Parking lot",
         "price": 1.56,
-        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
+        "display_name": "Costco Gas Station (Parking lot)"
       },
       {
         "name": "Costco Gas Station",
