@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T01:00:55.952140+00:00",
+  "updated_at": "2026-10-14T07:19:48.841847+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -7,8 +7,8 @@
         "10g 22K": 1753.81
       },
       "INR": {
-        "10g 24K": 149280.0,
-        "10g 22K": 136840.0
+        "10g 24K": 148260.0,
+        "10g 22K": 135900.0
       }
     },
     "Silver": {
@@ -16,7 +16,7 @@
         "1kg": 2763.97
       },
       "INR": {
-        "1kg": 234900.0
+        "1kg": 235000.0
       }
     }
   },
@@ -37,21 +37,27 @@
       },
       {
         "name": "Costco Gas Station",
+        "street": "Parking lot",
+        "price": 1.52,
+        "display_name": "Costco Gas Station (Parking lot)"
+      },
+      {
+        "name": "Costco Gas Station",
         "street": "75 E Hills Blvd SE",
         "price": 1.52,
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
         "name": "Costco Gas Station",
-        "street": "Parking lot",
-        "price": 1.54,
-        "display_name": "Costco Gas Station (Parking lot)"
-      },
-      {
-        "name": "Costco Gas Station",
         "street": "293020 CrossIron Common #300",
         "price": 1.58,
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
+      },
+      {
+        "name": "Esso",
+        "street": "1201 1st St SE",
+        "price": 1.6,
+        "display_name": "Esso"
       },
       {
         "name": "Shell",
@@ -70,12 +76,6 @@
         "street": "200 Airport Rd NE",
         "price": 1.66,
         "display_name": "Shell (200 Airport Rd NE)"
-      },
-      {
-        "name": "Esso",
-        "street": "1201 1st St SE",
-        "price": 1.68,
-        "display_name": "Esso"
       },
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
