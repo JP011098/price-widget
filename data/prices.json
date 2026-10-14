@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T21:32:39.749901+00:00",
+  "updated_at": "2026-10-14T01:00:55.952140+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -7,8 +7,8 @@
         "10g 22K": 1753.81
       },
       "INR": {
-        "10g 24K": 149290.0,
-        "10g 22K": 136850.0
+        "10g 24K": 149280.0,
+        "10g 22K": 136840.0
       }
     },
     "Silver": {
@@ -16,7 +16,7 @@
         "1kg": 2763.97
       },
       "INR": {
-        "1kg": 235000.0
+        "1kg": 234900.0
       }
     }
   },
@@ -55,15 +55,15 @@
       },
       {
         "name": "Shell",
-        "street": "11175 14 St NE",
-        "price": 1.61,
-        "display_name": "Shell (11175 14 St NE)"
+        "street": "539 17 Ave SW",
+        "price": 1.6,
+        "display_name": "Shell (539 17 Ave SW)"
       },
       {
         "name": "Shell",
-        "street": "539 17 Ave SW",
-        "price": 1.62,
-        "display_name": "Shell (539 17 Ave SW)"
+        "street": "11175 14 St NE",
+        "price": 1.61,
+        "display_name": "Shell (11175 14 St NE)"
       },
       {
         "name": "Shell",
