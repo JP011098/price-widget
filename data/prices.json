@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T13:13:07.475336+00:00",
+  "updated_at": "2026-10-15T18:07:35.378918+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -43,6 +43,12 @@
       },
       {
         "name": "Costco Gas Station",
+        "street": "75 E Hills Blvd SE",
+        "price": 1.5,
+        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
+      },
+      {
+        "name": "Costco Gas Station",
         "street": "293020 CrossIron Common #300",
         "price": 1.57,
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
@@ -76,12 +82,6 @@
         "street": "42148 AB-1",
         "price": 1.69,
         "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
-      },
-      {
-        "name": "Costco Gas Station",
-        "street": "75 E Hills Blvd SE",
-        "price": 2.5,
-        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       }
     ]
   }
