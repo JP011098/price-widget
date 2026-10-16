@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T20:46:20.598140+00:00",
+  "updated_at": "2026-10-16T23:22:01.860470+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -26,7 +26,7 @@
       {
         "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
-        "price": 1.42,
+        "price": 1.44,
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
@@ -37,27 +37,27 @@
       },
       {
         "name": "Costco Gas Station",
+        "street": "75 E Hills Blvd SE",
+        "price": 1.47,
+        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
+      },
+      {
+        "name": "Costco Gas Station",
         "street": "Parking lot",
         "price": 1.55,
         "display_name": "Costco Gas Station (Parking lot)"
       },
       {
-        "name": "Costco Gas Station",
-        "street": "75 E Hills Blvd SE",
-        "price": 1.55,
-        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
+        "name": "Shell",
+        "street": "539 17 Ave SW",
+        "price": 1.56,
+        "display_name": "Shell (539 17 Ave SW)"
       },
       {
         "name": "Esso",
         "street": "1201 1st St SE",
         "price": 1.57,
         "display_name": "Esso"
-      },
-      {
-        "name": "Shell",
-        "street": "539 17 Ave SW",
-        "price": 1.57,
-        "display_name": "Shell (539 17 Ave SW)"
       },
       {
         "name": "Costco Gas Station",
