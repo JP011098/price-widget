@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T23:37:33.373639+00:00",
+  "updated_at": "2026-10-16T01:04:36.005022+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -26,7 +26,7 @@
       {
         "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
-        "price": 1.44,
+        "price": 1.41,
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
@@ -37,8 +37,14 @@
       },
       {
         "name": "Costco Gas Station",
-        "street": "75 E Hills Blvd SE",
+        "street": "293020 CrossIron Common #300",
         "price": 1.5,
+        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
+      },
+      {
+        "name": "Costco Gas Station",
+        "street": "75 E Hills Blvd SE",
+        "price": 1.52,
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
@@ -46,6 +52,12 @@
         "street": "Parking lot",
         "price": 1.55,
         "display_name": "Costco Gas Station (Parking lot)"
+      },
+      {
+        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
+        "street": "42148 AB-1",
+        "price": 1.55,
+        "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
       },
       {
         "name": "Esso",
@@ -60,12 +72,6 @@
         "display_name": "Shell (539 17 Ave SW)"
       },
       {
-        "name": "Costco Gas Station",
-        "street": "293020 CrossIron Common #300",
-        "price": 1.6,
-        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
-      },
-      {
         "name": "Shell",
         "street": "11175 14 St NE",
         "price": 1.61,
@@ -76,12 +82,6 @@
         "street": "200 Airport Rd NE",
         "price": 1.66,
         "display_name": "Shell (200 Airport Rd NE)"
-      },
-      {
-        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
-        "street": "42148 AB-1",
-        "price": 1.69,
-        "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
       }
     ]
   }
