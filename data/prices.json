@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-16T06:54:33.202576+00:00",
+  "updated_at": "2026-10-16T12:12:13.099505+00:00",
   "metals": {
     "Gold": {
       "CAD": {
-        "10g 24K": 1913.18,
-        "10g 22K": 1753.81
+        "10g 24K": 1901.13,
+        "10g 22K": 1742.77
       },
       "INR": {
         "10g 24K": 147440.0,
@@ -13,7 +13,7 @@
     },
     "Silver": {
       "CAD": {
-        "1kg": 2763.97
+        "1kg": 2630.83
       },
       "INR": {
         "1kg": 230000.0
@@ -26,7 +26,7 @@
       {
         "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
-        "price": 1.41,
+        "price": 1.42,
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
@@ -37,27 +37,15 @@
       },
       {
         "name": "Costco Gas Station",
-        "street": "293020 CrossIron Common #300",
-        "price": 1.5,
-        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
-      },
-      {
-        "name": "Costco Gas Station",
-        "street": "75 E Hills Blvd SE",
-        "price": 1.52,
-        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
-      },
-      {
-        "name": "Costco Gas Station",
         "street": "Parking lot",
         "price": 1.55,
         "display_name": "Costco Gas Station (Parking lot)"
       },
       {
-        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
-        "street": "42148 AB-1",
+        "name": "Costco Gas Station",
+        "street": "75 E Hills Blvd SE",
         "price": 1.55,
-        "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
+        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
         "name": "Esso",
@@ -72,10 +60,22 @@
         "display_name": "Shell (539 17 Ave SW)"
       },
       {
+        "name": "Costco Gas Station",
+        "street": "293020 CrossIron Common #300",
+        "price": 1.6,
+        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
+      },
+      {
         "name": "Shell",
         "street": "11175 14 St NE",
         "price": 1.61,
         "display_name": "Shell (11175 14 St NE)"
+      },
+      {
+        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
+        "street": "42148 AB-1",
+        "price": 1.65,
+        "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
       },
       {
         "name": "Shell",
