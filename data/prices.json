@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T05:36:24.345882+00:00",
+  "updated_at": "2026-10-18T10:43:01.362434+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -62,7 +62,7 @@
       {
         "name": "Shell",
         "street": "539 17 Ave SW",
-        "price": 1.56,
+        "price": 1.55,
         "display_name": "Shell (539 17 Ave SW)"
       },
       {
