@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T00:45:36.917676+00:00",
+  "updated_at": "2026-10-18T04:50:56.877244+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -37,15 +37,15 @@
       },
       {
         "name": "Costco Gas Station",
-        "street": "75 E Hills Blvd SE",
-        "price": 1.47,
-        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
+        "street": "Parking lot",
+        "price": 1.45,
+        "display_name": "Costco Gas Station (Parking lot)"
       },
       {
         "name": "Costco Gas Station",
-        "street": "Parking lot",
-        "price": 1.48,
-        "display_name": "Costco Gas Station (Parking lot)"
+        "street": "75 E Hills Blvd SE",
+        "price": 1.47,
+        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
         "name": "Esso",
