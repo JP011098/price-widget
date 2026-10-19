@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T06:02:00.248210+00:00",
+  "updated_at": "2026-10-19T13:08:30.673625+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -38,7 +38,7 @@
       {
         "name": "Costco Gas Station",
         "street": "Parking lot",
-        "price": 1.45,
+        "price": 1.43,
         "display_name": "Costco Gas Station (Parking lot)"
       },
       {
