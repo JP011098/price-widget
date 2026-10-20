@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T20:20:57.366573+00:00",
+  "updated_at": "2026-10-20T22:54:59.946309+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -38,14 +38,8 @@
       {
         "name": "Costco Gas Station",
         "street": "Parking lot",
-        "price": 1.42,
+        "price": 1.43,
         "display_name": "Costco Gas Station (Parking lot)"
-      },
-      {
-        "name": "Costco Gas Station",
-        "street": "75 E Hills Blvd SE",
-        "price": 1.45,
-        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
         "name": "Esso",
@@ -58,6 +52,12 @@
         "street": "539 17 Ave SW",
         "price": 1.46,
         "display_name": "Shell (539 17 Ave SW)"
+      },
+      {
+        "name": "Costco Gas Station",
+        "street": "75 E Hills Blvd SE",
+        "price": 1.48,
+        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
         "name": "Costco Gas Station",
@@ -80,7 +80,7 @@
       {
         "name": "Shell",
         "street": "200 Airport Rd NE",
-        "price": 1.66,
+        "price": 1.62,
         "display_name": "Shell (200 Airport Rd NE)"
       }
     ]
