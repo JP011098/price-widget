@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T23:42:10.838360+00:00",
+  "updated_at": "2026-10-21T04:06:15.387324+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -7,8 +7,8 @@
         "10g 22K": 1706.57
       },
       "INR": {
-        "10g 24K": 146070.0,
-        "10g 22K": 133890.0
+        "10g 24K": 146080.0,
+        "10g 22K": 133900.0
       }
     },
     "Silver": {
@@ -16,7 +16,7 @@
         "1kg": 2573.76
       },
       "INR": {
-        "1kg": 229900.0
+        "1kg": 230000.0
       }
     }
   },
@@ -26,13 +26,13 @@
       {
         "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
-        "price": 1.39,
+        "price": 1.35,
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
         "name": "Tsuut'ina Gas",
         "street": "9915 Chula Blvd Tsuut\u2019ina Nation",
-        "price": 1.41,
+        "price": 1.37,
         "display_name": "Tsuut'ina Gas"
       },
       {
@@ -44,14 +44,8 @@
       {
         "name": "Esso",
         "street": "1201 1st St SE",
-        "price": 1.45,
+        "price": 1.43,
         "display_name": "Esso"
-      },
-      {
-        "name": "Shell",
-        "street": "539 17 Ave SW",
-        "price": 1.46,
-        "display_name": "Shell (539 17 Ave SW)"
       },
       {
         "name": "Costco Gas Station",
@@ -73,15 +67,21 @@
       },
       {
         "name": "Shell",
+        "street": "200 Airport Rd NE",
+        "price": 1.68,
+        "display_name": "Shell (200 Airport Rd NE)"
+      },
+      {
+        "name": "Shell",
         "street": "11175 14 St NE",
-        "price": 1.61,
+        "price": 1.68,
         "display_name": "Shell (11175 14 St NE)"
       },
       {
         "name": "Shell",
-        "street": "200 Airport Rd NE",
-        "price": 1.62,
-        "display_name": "Shell (200 Airport Rd NE)"
+        "street": "539 17 Ave SW",
+        "price": 1.68,
+        "display_name": "Shell (539 17 Ave SW)"
       }
     ]
   }
