@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T09:09:07.438616+00:00",
+  "updated_at": "2026-10-22T09:55:33.877167+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -36,28 +36,28 @@
         "display_name": "Tsuut'ina Gas"
       },
       {
+        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
+        "street": "42148 AB-1",
+        "price": 1.53,
+        "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
+      },
+      {
         "name": "Costco Gas Station",
         "street": "Parking lot",
-        "price": 1.43,
+        "price": 1.55,
         "display_name": "Costco Gas Station (Parking lot)"
       },
       {
         "name": "Costco Gas Station",
         "street": "75 E Hills Blvd SE",
-        "price": 1.45,
+        "price": 1.55,
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
         "name": "Costco Gas Station",
         "street": "293020 CrossIron Common #300",
-        "price": 1.48,
+        "price": 1.6,
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
-      },
-      {
-        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
-        "street": "42148 AB-1",
-        "price": 1.53,
-        "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
       },
       {
         "name": "Shell",
