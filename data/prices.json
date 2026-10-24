@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T12:31:46.150442+00:00",
+  "updated_at": "2026-10-24T16:28:33.998297+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -24,12 +24,6 @@
     "source": "google_places",
     "stations": [
       {
-        "name": "Costco Gas Station",
-        "street": "12905 Buffalo Run Blvd",
-        "price": 1.54,
-        "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
-      },
-      {
         "name": "Tsuut'ina Gas",
         "street": "9915 Chula Blvd Tsuut\u2019ina Nation",
         "price": 1.57,
@@ -37,21 +31,9 @@
       },
       {
         "name": "Costco Gas Station",
-        "street": "75 E Hills Blvd SE",
+        "street": "12905 Buffalo Run Blvd",
         "price": 1.6,
-        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
-      },
-      {
-        "name": "Costco Gas Station",
-        "street": "Parking lot",
-        "price": 1.63,
-        "display_name": "Costco Gas Station (Parking lot)"
-      },
-      {
-        "name": "Costco Gas Station",
-        "street": "293020 CrossIron Common #300",
-        "price": 1.65,
-        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
+        "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
         "name": "Esso",
@@ -78,10 +60,22 @@
         "display_name": "Shell (539 17 Ave SW)"
       },
       {
-        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
-        "street": "42148 AB-1",
-        "price": 1.79,
-        "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
+        "name": "Costco Gas Station",
+        "street": "Parking lot",
+        "price": 1.75,
+        "display_name": "Costco Gas Station (Parking lot)"
+      },
+      {
+        "name": "Costco Gas Station",
+        "street": "75 E Hills Blvd SE",
+        "price": 1.75,
+        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
+      },
+      {
+        "name": "Costco Gas Station",
+        "street": "293020 CrossIron Common #300",
+        "price": 1.75,
+        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       }
     ]
   }
