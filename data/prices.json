@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T21:42:05.583072+00:00",
+  "updated_at": "2026-10-25T23:43:31.571270+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -7,8 +7,8 @@
         "10g 22K": 1649.29
       },
       "INR": {
-        "10g 24K": 142580.0,
-        "10g 22K": 130700.0
+        "10g 24K": 142570.0,
+        "10g 22K": 130690.0
       }
     },
     "Silver": {
@@ -16,7 +16,7 @@
         "1kg": 2425.0
       },
       "INR": {
-        "1kg": 220000.0
+        "1kg": 219900.0
       }
     }
   },
@@ -25,15 +25,15 @@
     "stations": [
       {
         "name": "Costco Gas Station",
-        "street": "75 E Hills Blvd SE",
+        "street": "12905 Buffalo Run Blvd",
         "price": 1.55,
-        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
+        "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
         "name": "Costco Gas Station",
-        "street": "12905 Buffalo Run Blvd",
-        "price": 1.56,
-        "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
+        "street": "75 E Hills Blvd SE",
+        "price": 1.55,
+        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
         "name": "Tsuut'ina Gas",
