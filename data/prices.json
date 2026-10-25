@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T05:51:59.256827+00:00",
+  "updated_at": "2026-10-25T09:24:32.134915+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -38,19 +38,19 @@
       {
         "name": "Costco Gas Station",
         "street": "Parking lot",
-        "price": 1.65,
+        "price": 1.62,
         "display_name": "Costco Gas Station (Parking lot)"
       },
       {
         "name": "Costco Gas Station",
         "street": "75 E Hills Blvd SE",
-        "price": 1.65,
+        "price": 1.62,
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
         "name": "Costco Gas Station",
         "street": "293020 CrossIron Common #300",
-        "price": 1.65,
+        "price": 1.62,
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
