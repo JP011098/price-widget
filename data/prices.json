@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T21:34:01.303726+00:00",
+  "updated_at": "2026-10-25T21:42:05.583072+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -25,6 +25,12 @@
     "stations": [
       {
         "name": "Costco Gas Station",
+        "street": "75 E Hills Blvd SE",
+        "price": 1.55,
+        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
+      },
+      {
+        "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
         "price": 1.56,
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
@@ -37,9 +43,9 @@
       },
       {
         "name": "Costco Gas Station",
-        "street": "75 E Hills Blvd SE",
+        "street": "293020 CrossIron Common #300",
         "price": 1.6,
-        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
+        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
         "name": "Costco Gas Station",
@@ -48,10 +54,10 @@
         "display_name": "Costco Gas Station (Parking lot)"
       },
       {
-        "name": "Costco Gas Station",
-        "street": "293020 CrossIron Common #300",
-        "price": 1.62,
-        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
+        "name": "Shell",
+        "street": "539 17 Ave SW",
+        "price": 1.64,
+        "display_name": "Shell (539 17 Ave SW)"
       },
       {
         "name": "Esso",
@@ -70,12 +76,6 @@
         "street": "200 Airport Rd NE",
         "price": 1.69,
         "display_name": "Shell (200 Airport Rd NE)"
-      },
-      {
-        "name": "Shell",
-        "street": "539 17 Ave SW",
-        "price": 1.69,
-        "display_name": "Shell (539 17 Ave SW)"
       },
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
