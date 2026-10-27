@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T19:57:29.943880+00:00",
+  "updated_at": "2026-10-27T20:48:47.426999+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -46,6 +46,12 @@
         "street": "Parking lot",
         "price": 1.58,
         "display_name": "Costco Gas Station (Parking lot)"
+      },
+      {
+        "name": "Shell",
+        "street": "539 17 Ave SW",
+        "price": 1.58,
+        "display_name": "Shell (539 17 Ave SW)"
       },
       {
         "name": "Costco Gas Station",
