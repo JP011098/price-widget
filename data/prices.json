@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T20:48:47.426999+00:00",
+  "updated_at": "2026-10-27T23:41:46.166330+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -7,8 +7,8 @@
         "10g 22K": 1658.77
       },
       "INR": {
-        "10g 24K": 143290.0,
-        "10g 22K": 131350.0
+        "10g 24K": 143300.0,
+        "10g 22K": 131360.0
       }
     },
     "Silver": {
@@ -16,7 +16,7 @@
         "1kg": 2437.41
       },
       "INR": {
-        "1kg": 220000.0
+        "1kg": 219900.0
       }
     }
   },
@@ -42,6 +42,12 @@
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
+        "name": "Esso",
+        "street": "1201 1st St SE",
+        "price": 1.57,
+        "display_name": "Esso"
+      },
+      {
         "name": "Costco Gas Station",
         "street": "Parking lot",
         "price": 1.58,
@@ -58,12 +64,6 @@
         "street": "293020 CrossIron Common #300",
         "price": 1.6,
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
-      },
-      {
-        "name": "Esso",
-        "street": "1201 1st St SE",
-        "price": 1.63,
-        "display_name": "Esso"
       },
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
