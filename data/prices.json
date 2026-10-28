@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T11:33:57.455334+00:00",
+  "updated_at": "2026-10-28T13:10:43.513563+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -37,9 +37,21 @@
       },
       {
         "name": "Costco Gas Station",
+        "street": "Parking lot",
+        "price": 1.52,
+        "display_name": "Costco Gas Station (Parking lot)"
+      },
+      {
+        "name": "Costco Gas Station",
         "street": "75 E Hills Blvd SE",
-        "price": 1.54,
+        "price": 1.52,
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
+      },
+      {
+        "name": "Costco Gas Station",
+        "street": "293020 CrossIron Common #300",
+        "price": 1.54,
+        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
         "name": "Esso",
@@ -48,22 +60,10 @@
         "display_name": "Esso"
       },
       {
-        "name": "Costco Gas Station",
-        "street": "Parking lot",
-        "price": 1.58,
-        "display_name": "Costco Gas Station (Parking lot)"
-      },
-      {
         "name": "Shell",
         "street": "539 17 Ave SW",
-        "price": 1.58,
+        "price": 1.57,
         "display_name": "Shell (539 17 Ave SW)"
-      },
-      {
-        "name": "Costco Gas Station",
-        "street": "293020 CrossIron Common #300",
-        "price": 1.6,
-        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
