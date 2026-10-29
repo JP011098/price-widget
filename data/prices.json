@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T04:48:02.996524+00:00",
+  "updated_at": "2026-10-29T05:10:53.376902+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -74,7 +74,7 @@
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
         "street": "42148 AB-1",
-        "price": 1.67,
+        "price": 1.65,
         "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
       },
       {
