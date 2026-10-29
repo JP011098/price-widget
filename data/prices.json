@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T22:13:46.486695+00:00",
+  "updated_at": "2026-10-29T23:10:32.936793+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -24,16 +24,16 @@
     "source": "google_places",
     "stations": [
       {
+        "name": "Tsuut'ina Gas",
+        "street": "9915 Chula Blvd Tsuut\u2019ina Nation",
+        "price": 1.36,
+        "display_name": "Tsuut'ina Gas"
+      },
+      {
         "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
         "price": 1.37,
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
-      },
-      {
-        "name": "Tsuut'ina Gas",
-        "street": "9915 Chula Blvd Tsuut\u2019ina Nation",
-        "price": 1.39,
-        "display_name": "Tsuut'ina Gas"
       },
       {
         "name": "Costco Gas Station",
