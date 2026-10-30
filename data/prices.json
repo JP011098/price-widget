@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-30T11:23:01.669351+00:00",
+  "updated_at": "2026-10-30T12:30:31.274552+00:00",
   "metals": {
     "Gold": {
       "CAD": {
-        "10g 24K": 1803.62,
-        "10g 22K": 1653.38
+        "10g 24K": 1777.59,
+        "10g 22K": 1629.52
       },
       "INR": {
         "10g 24K": 142260.0,
@@ -13,7 +13,7 @@
     },
     "Silver": {
       "CAD": {
-        "1kg": 2335.01
+        "1kg": 2245.47
       },
       "INR": {
         "1kg": 210000.0
@@ -54,16 +54,16 @@
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
+        "name": "Shell",
+        "street": "539 17 Ave SW",
+        "price": 1.52,
+        "display_name": "Shell (539 17 Ave SW)"
+      },
+      {
         "name": "Esso",
         "street": "1201 1st St SE",
         "price": 1.57,
         "display_name": "Esso"
-      },
-      {
-        "name": "Shell",
-        "street": "539 17 Ave SW",
-        "price": 1.57,
-        "display_name": "Shell (539 17 Ave SW)"
       },
       {
         "name": "Shell",
