@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T19:48:58.922295+00:00",
+  "updated_at": "2026-10-31T21:51:59.814817+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -26,7 +26,7 @@
       {
         "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
-        "price": 1.28,
+        "price": 1.27,
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
@@ -43,15 +43,15 @@
       },
       {
         "name": "Costco Gas Station",
-        "street": "75 E Hills Blvd SE",
-        "price": 1.5,
-        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
+        "street": "293020 CrossIron Common #300",
+        "price": 1.48,
+        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
         "name": "Costco Gas Station",
-        "street": "293020 CrossIron Common #300",
+        "street": "75 E Hills Blvd SE",
         "price": 1.5,
-        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
+        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
         "name": "Shell",
@@ -66,16 +66,16 @@
         "display_name": "Esso"
       },
       {
+        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
+        "street": "42148 AB-1",
+        "price": 1.61,
+        "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
+      },
+      {
         "name": "Shell",
         "street": "11175 14 St NE",
         "price": 1.64,
         "display_name": "Shell (11175 14 St NE)"
-      },
-      {
-        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
-        "street": "42148 AB-1",
-        "price": 1.65,
-        "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
       },
       {
         "name": "Shell",
