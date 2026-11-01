@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T16:28:49.353242+00:00",
+  "updated_at": "2026-11-01T17:41:56.286801+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -54,16 +54,16 @@
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
-        "name": "Esso",
-        "street": "1201 1st St SE",
-        "price": 1.5,
-        "display_name": "Esso"
-      },
-      {
         "name": "Shell",
         "street": "539 17 Ave SW",
         "price": 1.51,
         "display_name": "Shell (539 17 Ave SW)"
+      },
+      {
+        "name": "Esso",
+        "street": "1201 1st St SE",
+        "price": 1.55,
+        "display_name": "Esso"
       },
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
@@ -74,7 +74,7 @@
       {
         "name": "Shell",
         "street": "11175 14 St NE",
-        "price": 1.64,
+        "price": 1.62,
         "display_name": "Shell (11175 14 St NE)"
       },
       {
