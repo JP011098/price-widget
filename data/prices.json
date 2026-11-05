@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T08:39:15.660907+00:00",
+  "updated_at": "2026-11-05T10:35:59.399529+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -38,13 +38,13 @@
       {
         "name": "Costco Gas Station",
         "street": "Parking lot",
-        "price": 1.33,
+        "price": 1.32,
         "display_name": "Costco Gas Station (Parking lot)"
       },
       {
         "name": "Costco Gas Station",
         "street": "75 E Hills Blvd SE",
-        "price": 1.37,
+        "price": 1.35,
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
@@ -67,6 +67,12 @@
       },
       {
         "name": "Shell",
+        "street": "200 Airport Rd NE",
+        "price": 1.57,
+        "display_name": "Shell (200 Airport Rd NE)"
+      },
+      {
+        "name": "Shell",
         "street": "11175 14 St NE",
         "price": 1.57,
         "display_name": "Shell (11175 14 St NE)"
@@ -76,12 +82,6 @@
         "street": "42148 AB-1",
         "price": 1.61,
         "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
-      },
-      {
-        "name": "Shell",
-        "street": "200 Airport Rd NE",
-        "price": 1.67,
-        "display_name": "Shell (200 Airport Rd NE)"
       }
     ]
   }
