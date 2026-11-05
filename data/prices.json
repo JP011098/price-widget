@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T02:05:58.829017+00:00",
+  "updated_at": "2026-11-05T08:00:04.732879+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -7,8 +7,8 @@
         "10g 22K": 1673.5
       },
       "INR": {
-        "10g 24K": 142810.0,
-        "10g 22K": 130910.0
+        "10g 24K": 146020.0,
+        "10g 22K": 133850.0
       }
     },
     "Silver": {
@@ -16,7 +16,7 @@
         "1kg": 2346.27
       },
       "INR": {
-        "1kg": 199900.0
+        "1kg": 210000.0
       }
     }
   },
@@ -38,7 +38,7 @@
       {
         "name": "Costco Gas Station",
         "street": "Parking lot",
-        "price": 1.37,
+        "price": 1.33,
         "display_name": "Costco Gas Station (Parking lot)"
       },
       {
@@ -48,22 +48,22 @@
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
-        "name": "Shell",
-        "street": "539 17 Ave SW",
-        "price": 1.42,
-        "display_name": "Shell (539 17 Ave SW)"
-      },
-      {
         "name": "Costco Gas Station",
         "street": "293020 CrossIron Common #300",
-        "price": 1.46,
+        "price": 1.4,
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
         "name": "Esso",
         "street": "1201 1st St SE",
-        "price": 1.46,
+        "price": 1.41,
         "display_name": "Esso"
+      },
+      {
+        "name": "Shell",
+        "street": "539 17 Ave SW",
+        "price": 1.41,
+        "display_name": "Shell (539 17 Ave SW)"
       },
       {
         "name": "Shell",
