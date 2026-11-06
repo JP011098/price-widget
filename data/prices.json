@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T00:30:52.047422+00:00",
+  "updated_at": "2026-11-06T05:37:02.278664+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -7,8 +7,8 @@
         "10g 22K": 1694.18
       },
       "INR": {
-        "10g 24K": 146030.0,
-        "10g 22K": 133860.0
+        "10g 24K": 143460.0,
+        "10g 22K": 131500.0
       }
     },
     "Silver": {
@@ -16,7 +16,7 @@
         "1kg": 2343.02
       },
       "INR": {
-        "1kg": 210100.0
+        "1kg": 205000.0
       }
     }
   },
@@ -37,21 +37,21 @@
       },
       {
         "name": "Costco Gas Station",
-        "street": "293020 CrossIron Common #300",
+        "street": "Parking lot",
         "price": 1.3,
-        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
+        "display_name": "Costco Gas Station (Parking lot)"
       },
       {
         "name": "Costco Gas Station",
         "street": "75 E Hills Blvd SE",
-        "price": 1.32,
+        "price": 1.3,
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
         "name": "Costco Gas Station",
-        "street": "Parking lot",
-        "price": 1.33,
-        "display_name": "Costco Gas Station (Parking lot)"
+        "street": "293020 CrossIron Common #300",
+        "price": 1.3,
+        "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
         "name": "Shell",
@@ -62,7 +62,7 @@
       {
         "name": "Esso",
         "street": "1201 1st St SE",
-        "price": 1.41,
+        "price": 1.4,
         "display_name": "Esso"
       },
       {
