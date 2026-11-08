@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T02:48:41.461026+00:00",
+  "updated_at": "2026-11-08T05:16:53.176535+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -66,16 +66,16 @@
         "display_name": "Shell (539 17 Ave SW)"
       },
       {
+        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
+        "street": "42148 AB-1",
+        "price": 1.4,
+        "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
+      },
+      {
         "name": "Shell",
         "street": "11175 14 St NE",
         "price": 1.4,
         "display_name": "Shell (11175 14 St NE)"
-      },
-      {
-        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
-        "street": "42148 AB-1",
-        "price": 1.42,
-        "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
       },
       {
         "name": "Shell",
