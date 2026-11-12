@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T00:19:41.852570+00:00",
+  "updated_at": "2026-11-12T04:37:36.728830+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -7,8 +7,8 @@
         "10g 22K": 1671.26
       },
       "INR": {
-        "10g 24K": 141970.0,
-        "10g 22K": 130140.0
+        "10g 24K": 139800.0,
+        "10g 22K": 128150.0
       }
     },
     "Silver": {
@@ -16,7 +16,7 @@
         "1kg": 2355.2
       },
       "INR": {
-        "1kg": 199900.0
+        "1kg": 200000.0
       }
     }
   },
@@ -24,16 +24,16 @@
     "source": "google_places",
     "stations": [
       {
+        "name": "Tsuut'ina Gas",
+        "street": "9915 Chula Blvd Tsuut\u2019ina Nation",
+        "price": 1.06,
+        "display_name": "Tsuut'ina Gas"
+      },
+      {
         "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
         "price": 1.1,
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
-      },
-      {
-        "name": "Tsuut'ina Gas",
-        "street": "9915 Chula Blvd Tsuut\u2019ina Nation",
-        "price": 1.12,
-        "display_name": "Tsuut'ina Gas"
       },
       {
         "name": "Costco Gas Station",
@@ -54,16 +54,22 @@
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
+        "name": "Esso",
+        "street": "1201 1st St SE",
+        "price": 1.22,
+        "display_name": "Esso"
+      },
+      {
         "name": "Shell",
         "street": "539 17 Ave SW",
         "price": 1.23,
         "display_name": "Shell (539 17 Ave SW)"
       },
       {
-        "name": "Esso",
-        "street": "1201 1st St SE",
-        "price": 1.27,
-        "display_name": "Esso"
+        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
+        "street": "42148 AB-1",
+        "price": 1.3,
+        "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
       },
       {
         "name": "Shell",
@@ -72,15 +78,9 @@
         "display_name": "Shell (11175 14 St NE)"
       },
       {
-        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
-        "street": "42148 AB-1",
-        "price": 1.32,
-        "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
-      },
-      {
         "name": "Shell",
         "street": "200 Airport Rd NE",
-        "price": 1.35,
+        "price": 1.34,
         "display_name": "Shell (200 Airport Rd NE)"
       }
     ]
