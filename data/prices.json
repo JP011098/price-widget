@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14T09:58:25.307807+00:00",
+  "updated_at": "2026-11-14T16:31:44.416415+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -62,7 +62,7 @@
       {
         "name": "Shell",
         "street": "539 17 Ave SW",
-        "price": 1.19,
+        "price": 1.18,
         "display_name": "Shell (539 17 Ave SW)"
       },
       {
@@ -80,7 +80,7 @@
       {
         "name": "Shell",
         "street": "200 Airport Rd NE",
-        "price": 1.34,
+        "price": 1.33,
         "display_name": "Shell (200 Airport Rd NE)"
       }
     ]
