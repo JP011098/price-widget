@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T21:34:11.201057+00:00",
+  "updated_at": "2026-11-16T01:41:16.703183+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -7,8 +7,8 @@
         "10g 22K": 1633.29
       },
       "INR": {
-        "10g 24K": 137620.0,
-        "10g 22K": 126150.0
+        "10g 24K": 137610.0,
+        "10g 22K": 126140.0
       }
     },
     "Silver": {
@@ -16,7 +16,7 @@
         "1kg": 2236.08
       },
       "INR": {
-        "1kg": 195000.0
+        "1kg": 194900.0
       }
     }
   },
@@ -68,7 +68,7 @@
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
         "street": "42148 AB-1",
-        "price": 1.26,
+        "price": 1.2,
         "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
       },
       {
