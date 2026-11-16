@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T15:35:32.281729+00:00",
+  "updated_at": "2026-11-16T16:35:00.919701+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -56,7 +56,7 @@
       {
         "name": "Esso",
         "street": "1201 1st St SE",
-        "price": 1.17,
+        "price": 1.18,
         "display_name": "Esso"
       },
       {
@@ -80,7 +80,7 @@
       {
         "name": "Shell",
         "street": "200 Airport Rd NE",
-        "price": 1.33,
+        "price": 1.3,
         "display_name": "Shell (200 Airport Rd NE)"
       }
     ]
