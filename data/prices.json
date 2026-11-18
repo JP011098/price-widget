@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T03:20:39.455022+00:00",
+  "updated_at": "2026-11-18T03:20:49.898205+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -25,15 +25,15 @@
     "stations": [
       {
         "name": "Costco Gas Station",
-        "street": "Parking lot",
+        "street": "12905 Buffalo Run Blvd",
         "price": 1.02,
-        "display_name": "Costco Gas Station (Parking lot)"
+        "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
         "name": "Costco Gas Station",
-        "street": "12905 Buffalo Run Blvd",
-        "price": 1.04,
-        "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
+        "street": "Parking lot",
+        "price": 1.05,
+        "display_name": "Costco Gas Station (Parking lot)"
       },
       {
         "name": "Costco Gas Station",
@@ -60,12 +60,6 @@
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
-        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
-        "street": "42148 AB-1",
-        "price": 1.16,
-        "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
-      },
-      {
         "name": "Esso",
         "street": "1201 1st St SE",
         "price": 1.18,
@@ -82,6 +76,12 @@
         "street": "200 Airport Rd NE",
         "price": 1.24,
         "display_name": "Shell (200 Airport Rd NE)"
+      },
+      {
+        "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
+        "street": "42148 AB-1",
+        "price": 1.37,
+        "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
       }
     ]
   }
