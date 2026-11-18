@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T18:21:21.861485+00:00",
+  "updated_at": "2026-11-18T20:52:01.757891+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -31,15 +31,15 @@
       },
       {
         "name": "Costco Gas Station",
-        "street": "12905 Buffalo Run Blvd",
-        "price": 0.99,
-        "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
-      },
-      {
-        "name": "Costco Gas Station",
         "street": "75 E Hills Blvd SE",
         "price": 1.02,
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
+      },
+      {
+        "name": "Costco Gas Station",
+        "street": "12905 Buffalo Run Blvd",
+        "price": 1.03,
+        "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
         "name": "Tsuut'ina Gas",
@@ -54,12 +54,6 @@
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
-        "name": "Esso",
-        "street": "1201 1st St SE",
-        "price": 1.18,
-        "display_name": "Esso"
-      },
-      {
         "name": "Shell",
         "street": "11175 14 St NE",
         "price": 1.24,
@@ -70,6 +64,12 @@
         "street": "200 Airport Rd NE",
         "price": 1.27,
         "display_name": "Shell (200 Airport Rd NE)"
+      },
+      {
+        "name": "Esso",
+        "street": "1201 1st St SE",
+        "price": 1.27,
+        "display_name": "Esso"
       },
       {
         "name": "Shell",
