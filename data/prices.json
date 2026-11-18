@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T02:12:19.018575+00:00",
+  "updated_at": "2026-11-18T03:20:39.455022+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -25,15 +25,21 @@
     "stations": [
       {
         "name": "Costco Gas Station",
+        "street": "Parking lot",
+        "price": 1.02,
+        "display_name": "Costco Gas Station (Parking lot)"
+      },
+      {
+        "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
         "price": 1.04,
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
         "name": "Costco Gas Station",
-        "street": "Parking lot",
+        "street": "75 E Hills Blvd SE",
         "price": 1.05,
-        "display_name": "Costco Gas Station (Parking lot)"
+        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
         "name": "Tsuut'ina Gas",
@@ -49,20 +55,8 @@
       },
       {
         "name": "Costco Gas Station",
-        "street": "75 E Hills Blvd SE",
-        "price": 1.1,
-        "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
-      },
-      {
-        "name": "Esso",
-        "street": "1201 1st St SE",
-        "price": 1.1,
-        "display_name": "Esso"
-      },
-      {
-        "name": "Costco Gas Station",
         "street": "293020 CrossIron Common #300",
-        "price": 1.13,
+        "price": 1.1,
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
@@ -70,6 +64,12 @@
         "street": "42148 AB-1",
         "price": 1.16,
         "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
+      },
+      {
+        "name": "Esso",
+        "street": "1201 1st St SE",
+        "price": 1.18,
+        "display_name": "Esso"
       },
       {
         "name": "Shell",
@@ -80,7 +80,7 @@
       {
         "name": "Shell",
         "street": "200 Airport Rd NE",
-        "price": 1.25,
+        "price": 1.24,
         "display_name": "Shell (200 Airport Rd NE)"
       }
     ]
