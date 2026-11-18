@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T03:29:08.106026+00:00",
+  "updated_at": "2026-11-18T04:52:06.166277+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -7,8 +7,8 @@
         "10g 22K": 1609.41
       },
       "INR": {
-        "10g 24K": 136030.0,
-        "10g 22K": 124690.0
+        "10g 24K": 133260.0,
+        "10g 22K": 122150.0
       }
     },
     "Silver": {
@@ -16,7 +16,7 @@
         "1kg": 2153.07
       },
       "INR": {
-        "1kg": 189900.0
+        "1kg": 185000.0
       }
     }
   },
@@ -32,7 +32,7 @@
       {
         "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
-        "price": 1.04,
+        "price": 1.02,
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
