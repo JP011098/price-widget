@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-18T08:52:21.929634+00:00",
+  "updated_at": "2026-11-18T12:50:17.599241+00:00",
   "metals": {
     "Gold": {
       "CAD": {
-        "10g 24K": 1755.66,
-        "10g 22K": 1609.41
+        "10g 24K": 1724.75,
+        "10g 22K": 1581.07
       },
       "INR": {
         "10g 24K": 133260.0,
@@ -13,7 +13,7 @@
     },
     "Silver": {
       "CAD": {
-        "1kg": 2153.07
+        "1kg": 2084.62
       },
       "INR": {
         "1kg": 185000.0
@@ -32,7 +32,7 @@
       {
         "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
-        "price": 1.02,
+        "price": 0.99,
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
       },
       {
@@ -48,34 +48,34 @@
         "display_name": "Tsuut'ina Gas"
       },
       {
-        "name": "Shell",
-        "street": "539 17 Ave SW",
-        "price": 1.07,
-        "display_name": "Shell (539 17 Ave SW)"
-      },
-      {
         "name": "Costco Gas Station",
         "street": "293020 CrossIron Common #300",
-        "price": 1.1,
+        "price": 1.07,
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
-      },
-      {
-        "name": "Esso",
-        "street": "1201 1st St SE",
-        "price": 1.18,
-        "display_name": "Esso"
-      },
-      {
-        "name": "Shell",
-        "street": "200 Airport Rd NE",
-        "price": 1.24,
-        "display_name": "Shell (200 Airport Rd NE)"
       },
       {
         "name": "Shell",
         "street": "11175 14 St NE",
         "price": 1.24,
         "display_name": "Shell (11175 14 St NE)"
+      },
+      {
+        "name": "Shell",
+        "street": "200 Airport Rd NE",
+        "price": 1.27,
+        "display_name": "Shell (200 Airport Rd NE)"
+      },
+      {
+        "name": "Esso",
+        "street": "1201 1st St SE",
+        "price": 1.27,
+        "display_name": "Esso"
+      },
+      {
+        "name": "Shell",
+        "street": "539 17 Ave SW",
+        "price": 1.27,
+        "display_name": "Shell (539 17 Ave SW)"
       },
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
