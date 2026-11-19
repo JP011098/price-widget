@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T19:24:18.400628+00:00",
+  "updated_at": "2026-11-19T21:15:55.639617+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -25,12 +25,6 @@
     "stations": [
       {
         "name": "Costco Gas Station",
-        "street": "Parking lot",
-        "price": 1.03,
-        "display_name": "Costco Gas Station (Parking lot)"
-      },
-      {
-        "name": "Costco Gas Station",
         "street": "12905 Buffalo Run Blvd",
         "price": 1.03,
         "display_name": "Costco Gas Station (12905 Buffalo Run Blvd)"
@@ -43,6 +37,12 @@
       },
       {
         "name": "Costco Gas Station",
+        "street": "Parking lot",
+        "price": 1.08,
+        "display_name": "Costco Gas Station (Parking lot)"
+      },
+      {
+        "name": "Costco Gas Station",
         "street": "75 E Hills Blvd SE",
         "price": 1.08,
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
@@ -50,7 +50,7 @@
       {
         "name": "Costco Gas Station",
         "street": "293020 CrossIron Common #300",
-        "price": 1.12,
+        "price": 1.1,
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
