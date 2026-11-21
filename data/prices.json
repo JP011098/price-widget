@@ -1,22 +1,22 @@
 {
-  "updated_at": "2026-11-20T19:49:58.412412+00:00",
+  "updated_at": "2026-11-21T00:33:16.980041+00:00",
   "metals": {
     "Gold": {
       "CAD": {
-        "10g 24K": 1707.56,
-        "10g 22K": 1565.32
+        "10g 24K": 1631.88,
+        "10g 22K": 1495.94
       },
       "INR": {
-        "10g 24K": 125570.0,
-        "10g 22K": 115100.0
+        "10g 24K": 125560.0,
+        "10g 22K": 115090.0
       }
     },
     "Silver": {
       "CAD": {
-        "1kg": 2070.54
+        "1kg": 1901.33
       },
       "INR": {
-        "1kg": 175000.0
+        "1kg": 174900.0
       }
     }
   },
@@ -32,13 +32,13 @@
       {
         "name": "Tsuut'ina Gas",
         "street": "9915 Chula Blvd Tsuut\u2019ina Nation",
-        "price": 1.06,
+        "price": 1.05,
         "display_name": "Tsuut'ina Gas"
       },
       {
         "name": "Costco Gas Station",
         "street": "Parking lot",
-        "price": 1.08,
+        "price": 1.06,
         "display_name": "Costco Gas Station (Parking lot)"
       },
       {
