@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T17:14:12.432975+00:00",
+  "updated_at": "2026-11-21T21:37:45.000720+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -54,16 +54,16 @@
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
+        "name": "Esso",
+        "street": "1201 1st St SE",
+        "price": 1.18,
+        "display_name": "Esso"
+      },
+      {
         "name": "Shell",
         "street": "539 17 Ave SW",
         "price": 1.18,
         "display_name": "Shell (539 17 Ave SW)"
-      },
-      {
-        "name": "Esso",
-        "street": "1201 1st St SE",
-        "price": 1.24,
-        "display_name": "Esso"
       },
       {
         "name": "Shell",
@@ -80,7 +80,7 @@
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
         "street": "42148 AB-1",
-        "price": 1.35,
+        "price": 1.33,
         "display_name": "Petro-Canada Gas Station & Petro-Pass Truck Stop"
       }
     ]
