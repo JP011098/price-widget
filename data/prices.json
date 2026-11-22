@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T01:32:16.654181+00:00",
+  "updated_at": "2026-11-22T02:57:26.521634+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -54,12 +54,6 @@
         "display_name": "Costco Gas Station (293020 CrossIron Common #300)"
       },
       {
-        "name": "Esso",
-        "street": "1201 1st St SE",
-        "price": 1.18,
-        "display_name": "Esso"
-      },
-      {
         "name": "Shell",
         "street": "539 17 Ave SW",
         "price": 1.18,
@@ -67,15 +61,21 @@
       },
       {
         "name": "Shell",
-        "street": "200 Airport Rd NE",
-        "price": 1.27,
-        "display_name": "Shell (200 Airport Rd NE)"
+        "street": "11175 14 St NE",
+        "price": 1.19,
+        "display_name": "Shell (11175 14 St NE)"
+      },
+      {
+        "name": "Esso",
+        "street": "1201 1st St SE",
+        "price": 1.24,
+        "display_name": "Esso"
       },
       {
         "name": "Shell",
-        "street": "11175 14 St NE",
+        "street": "200 Airport Rd NE",
         "price": 1.27,
-        "display_name": "Shell (11175 14 St NE)"
+        "display_name": "Shell (200 Airport Rd NE)"
       },
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
