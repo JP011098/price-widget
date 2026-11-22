@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T20:45:03.622876+00:00",
+  "updated_at": "2026-11-22T21:15:45.321919+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -44,7 +44,7 @@
       {
         "name": "Costco Gas Station",
         "street": "75 E Hills Blvd SE",
-        "price": 1.1,
+        "price": 1.07,
         "display_name": "Costco Gas Station (75 E Hills Blvd SE)"
       },
       {
@@ -56,7 +56,7 @@
       {
         "name": "Esso",
         "street": "1201 1st St SE",
-        "price": 1.18,
+        "price": 1.16,
         "display_name": "Esso"
       },
       {
