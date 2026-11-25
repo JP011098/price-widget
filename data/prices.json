@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T20:51:34.630977+00:00",
+  "updated_at": "2026-11-25T22:15:35.215287+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -32,7 +32,7 @@
       {
         "name": "Tsuut'ina Gas",
         "street": "9915 Chula Blvd Tsuut\u2019ina Nation",
-        "price": 1.05,
+        "price": 1.01,
         "display_name": "Tsuut'ina Gas"
       },
       {
@@ -56,7 +56,7 @@
       {
         "name": "Esso",
         "street": "1201 1st St SE",
-        "price": 1.1,
+        "price": 1.11,
         "display_name": "Esso"
       },
       {
