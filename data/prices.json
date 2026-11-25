@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T13:22:22.723901+00:00",
+  "updated_at": "2026-11-25T15:08:13.998324+00:00",
   "metals": {
     "Gold": {
       "CAD": {
@@ -7,8 +7,8 @@
         "10g 22K": 1479.66
       },
       "INR": {
-        "10g 24K": 124580.0,
-        "10g 22K": 114200.0
+        "10g 24K": 123280.0,
+        "10g 22K": 113000.0
       }
     },
     "Silver": {
@@ -67,15 +67,15 @@
       },
       {
         "name": "Shell",
-        "street": "200 Airport Rd NE",
-        "price": 1.22,
-        "display_name": "Shell (200 Airport Rd NE)"
+        "street": "11175 14 St NE",
+        "price": 1.17,
+        "display_name": "Shell (11175 14 St NE)"
       },
       {
         "name": "Shell",
-        "street": "11175 14 St NE",
-        "price": 1.24,
-        "display_name": "Shell (11175 14 St NE)"
+        "street": "200 Airport Rd NE",
+        "price": 1.22,
+        "display_name": "Shell (200 Airport Rd NE)"
       },
       {
         "name": "Petro-Canada Gas Station & Petro-Pass Truck Stop",
